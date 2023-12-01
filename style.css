@@ -1,0 +1,23 @@
+#navbar {
+    background-color: #1c1c1c;
+    height: 8.125rem;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar-logo{
+    height: 32px;
+}
+
+#navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
