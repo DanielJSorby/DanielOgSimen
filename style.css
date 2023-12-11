@@ -1,12 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Arial Black';
+}
+
+/*  Tekst  */
+.main-header{
+    font-size: 3.125rem;
+    text-align: center;
+    margin-top: 3.125rem;
+
+}
+
+
 /* navbar CSS*/
 .navbar {
-    height: 9vh;
+    font-family: 'Arial Black';
+    height: 8.125rem;
     width: 100%;
     background-color: #1c1c1c;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.875rem;
 }
 
 .logo {
@@ -31,4 +49,12 @@
 .navbar ul li a:hover {
     color: #EA3B30;
     transition: .3s;
+}
+
+/*  Forside Greie */
+
+#forside-start {
+    text-align: center;
+    height: 59.375rem;
+    background-color: #10213e;
 }
