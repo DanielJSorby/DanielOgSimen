@@ -5,16 +5,18 @@
     font-family: 'Arial Black';
 }
 
+
 /*  Tekst  */
-.main-header{
+
+.main-header {
     font-size: 3.125rem;
     text-align: center;
-    margin-top: 3.125rem;
-
+    padding-top: 3.125rem;
 }
 
 
 /* navbar CSS*/
+
 .navbar {
     font-family: 'Arial Black';
     height: 8.125rem;
@@ -30,14 +32,14 @@
 .logo {
     color: white;
     display: flex;
-    height: 4vw;
-    margin-left: 1vw;
+    height: 4.5rem;
+    margin-left: 1.5rem;
 }
 
 .navbar ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
 }
 
 .navbar ul li a {
@@ -51,10 +53,20 @@
     transition: .3s;
 }
 
+
 /*  Forside Greie */
 
 #forside-start {
     text-align: center;
     height: 59.375rem;
     background-color: #10213e;
+}
+
+#start-text-container {
+    margin: 0;
+    padding: 0;
+}
+
+#start-bilde {
+    float: right;
 }
