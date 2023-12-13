@@ -49,6 +49,25 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.3rem;
+    bottom: 0;
+    left: 0;
+    background-color: #EA3B30;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .navbar ul li a:hover {
@@ -68,6 +87,9 @@ body {
 #start-text-container {
     margin: 0;
     padding: 0;
+    float: left;
+    padding-top: 20rem;
+    padding-left: 3rem;
 }
 
 #start-bilde {
