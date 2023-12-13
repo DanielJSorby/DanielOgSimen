@@ -5,6 +5,9 @@
     font-family: 'Arial Black';
 }
 
+body {
+    background-color: #1c1c1c;
+}
 
 /*  Tekst  */
 
@@ -69,4 +72,76 @@
 
 #start-bilde {
     float: right;
+}
+
+
+/*våre biler CSS  */ 
+.våre_biler_tekst{
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 4rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#manuel {
+    padding-top: 1.5rem;
+}
+
+/* CSS bokser på biler siden */
+.bil_annonser {
+    display: flex;
+}
+
+.annonse {
+    background: white;
+    margin: 1vw;
+    border-radius: 15px;
+}
+
+.annonse_bilde {
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.car-1 {
+    background-image: url('./Bilder/Tesla_Våre_merker.jpeg');
+}
+
+.car-2 {
+    background-image: url('mclaren-p1-070.jpg');
+}
+
+.car-3 {
+    background-image: url('amg.jpg');
+}
+
+.annonse h2 {
+    padding: 10px;
+}
+
+.annonse p {
+    padding: 10px;
+}
+
+.annonse a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 1vw 1vw;
+    text-decoration: none;
+}
+
+.annonse:hover {
+    background-color:#ea1538;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.tekst_biler_boks {
+    display: flex;
 }
