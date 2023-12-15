@@ -3,10 +3,12 @@
     padding: 0;
     color: white;
     font-family: 'Arial Black';
+    min-width: 12%;
 }
 
 body {
-    background-color: #1c1c1c;
+    background-color:white;
+    width: 100vw;
 }
 
 /*  Tekst  */
@@ -168,7 +170,6 @@ body {
 }
 
 .annonse:hover {
-    background-color: white;
     opacity: 75%;
     cursor: pointer;
     transform: scale(1.05);
@@ -182,4 +183,72 @@ body {
 .avsnitt_biler_boks {
     font-size: 2.5rem;
     margin-left: 1rem;
+}
+
+/* SLIDESHOW CSS*/ 
+.slider {
+    display: grid;
+    place-items: center;
+    height: 15.625rem;
+    margin: auto;
+    position: relative;
+    width: 90%;
+}
+
+.slider-images {
+    display: flex;
+    width: calc(15.625rem * 18);
+    animation: scroll 40s linear infinite;
+}
+
+.slider-images:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-15.625rem * 9));
+    }
+}
+
+.slide {
+    height: 12.5rem;
+    width: 15.625rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    perspective: 6.25rem;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.slide-image:hover {
+    transform: translateZ(1.25rem);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.slider::before,
+.slider::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
 }
