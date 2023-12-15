@@ -114,17 +114,24 @@ body {
 /* CSS bokser på biler siden */
 .bil_annonser {
     display: flex;
+    padding-left: 1rem;
+    flex-wrap: wrap;
+
 }
 
 .annonse {
-    background: white;
-    margin: 1vw;
+    background: black;
+    margin: 1rem;
     border-radius: 15px;
+    width: 54.625rem;
+    height: 26.375rem;  
 }
 
 .annonse_bilde {
     background-size: cover;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
+    height: 26.375rem;
+    opacity: 80%;
 }
 
 .car-1 {
@@ -132,11 +139,15 @@ body {
 }
 
 .car-2 {
-    background-image: url('mclaren-p1-070.jpg');
+    background-image: url('./Bilder/Lamborghini_våre_merker.jpeg');
 }
 
 .car-3 {
-    background-image: url('amg.jpg');
+    background-image: url('./Bilder/Porsche_våre_merker.jpeg');
+}
+
+.car-4 {
+    background-image: url('./Bilder/Ferrari_våre_merker.jpeg');
 }
 
 .annonse h2 {
@@ -149,7 +160,7 @@ body {
 
 .annonse a {
     background-color: black;
-    color: white;
+    color: black;
     padding: 15px 20px;
     display: block;
     text-align: center;
@@ -158,12 +169,18 @@ body {
 }
 
 .annonse:hover {
-    background-color:#ea1538;
+    background-color: white;
+    opacity: 75%;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 1s ease;
 }
 
-.tekst_biler_boks {
-    display: flex;
+.overskrift_biler_boks {
+    font-size: 4.5rem;
+}
+
+.avsnitt_biler_boks {
+    font-size: 2.5rem;
+    margin-left: 1rem;
 }
