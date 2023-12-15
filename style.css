@@ -114,9 +114,8 @@ body {
 /* CSS bokser på biler siden */
 .bil_annonser {
     display: flex;
-    padding-left: 1rem;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 .annonse {
