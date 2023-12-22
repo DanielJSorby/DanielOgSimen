@@ -106,12 +106,13 @@ body {
     margin: 0;
     padding: 0;
     float: left;
-    padding-top: 20rem;
+    padding-top: 10rem;
     padding-left: 3rem;
 }
 
 #start-bilde {
     float: right;
+    padding-top: 20rem;
 }
 
 
