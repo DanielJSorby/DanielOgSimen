@@ -21,6 +21,54 @@ body {
     padding-top: 3.125rem;
 }
 
+/*forside presentasjon til de ulike sidene css*/
+.bildeogtekst1, .bildeogtekst2, .bildeogtekst3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bildeogtekst1 {
+    background-color: white;
+}
+
+.bildeogtekst2 {
+    background-color: #B3B3B3;
+}
+
+.bilderogtekst {
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.omossbilde {
+    width: 51%;
+}
+
+.understrek {
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
+}
+
+.undertekst {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+}
+
+.introduksjonsbilde {
+    margin: 4rem;
+    width: 110rem;
+}
+
+.tekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
 
 /* navbar CSS*/
 .navbar {
