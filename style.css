@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/gam8srr.css"); /*  futura-pt  */
+
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +40,22 @@ body {
     display: flex;
     height: 4.5rem;
     margin-left: 1.5rem;
+}
+
+#navbar-logo {
+    background-image: url('./Bilder/Prime\ Wheels\ Logo\ Hvit.png');
+    display: flex;
+    height: 4.5rem;
+    width: 12rem;
+    margin-left: 1.5rem;
+    z-index: 10;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#navbar-logo:hover {
+    background-image: url('./Bilder/Prime\ Wheels\ Logo\ Rod.png');
+    transition: .3s;
 }
 
 .navbar ul li {
