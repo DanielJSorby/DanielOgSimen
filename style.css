@@ -49,11 +49,12 @@ body {
     text-decoration: underline;
     text-decoration-color: black;
     color: black;
+    font-size: 3.4375rem;
 }
 
 .undertekst {
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: black;
 }
@@ -149,21 +150,28 @@ body {
     text-align: center;
     height: 59.375rem;
     background-color: #10213e;
+    overflow: hidden;
 }
 
 #start-text-container {
-    margin: 0;
     padding: 0;
     float: left;
-    padding-top: 10rem;
-    padding-left: 3rem;
+    margin: 6rem;
 }
 
 #start-bilde {
     float: right;
-    padding-top: 20rem;
+    margin-right: -12rem;
+    width: 94.625rem;
 }
 
+#start-header {
+    font-size: 5rem;
+}
+
+#start-under-header {
+    font-size: 2.5rem;
+}
 
 /*våre biler CSS  */ 
 .våre_biler_tekst{
