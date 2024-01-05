@@ -45,6 +45,23 @@ body {
     width: 51%;
 }
 
+.knapp-forside a{
+    background-color: #EA3B30;
+    border-radius: 60px;
+    height: 2.8206rem;
+    width: 14.2744rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 0.5vh;
+}
+
+.knapp-forside a:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
 .understrek {
     text-decoration: underline;
     text-decoration-color: black;
