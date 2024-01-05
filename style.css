@@ -282,6 +282,7 @@ body {
 }
 
 .slider-images:hover {
+    transition: ease-in;
     animation-play-state: paused;
 }
 
