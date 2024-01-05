@@ -87,8 +87,12 @@ body {
 .logo {
     color: white;
     display: flex;
-    height: 4.5rem;
+    height: 4rem;
     margin-left: 1.5rem;
+    width: 12rem;
+    background-image: url('./Bilder/Prime\ Wheels\ Logo\ Rod.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #navbar-logo {
