@@ -4,13 +4,14 @@
     margin: 0;
     padding: 0;
     color: white;
-    font-family: 'Arial Black';
+    font-family: futura-pt, sans-serif;
     min-width: 12%;
 }
 
 body {
     background-color:#1c1c1c;
     width: 100vw;
+    
 }
 
 /*  Tekst  */
