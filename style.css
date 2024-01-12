@@ -355,3 +355,11 @@ body {
     top: 0;
     transform: rotateZ(180deg);
 }
+
+
+#chatbot {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
