@@ -225,8 +225,9 @@ body {
     background: black;
     margin: 1rem;
     border-radius: 15px;
-    width: 54.625rem;
+    width: 43rem;
     height: 26.375rem;  
+    object-fit: contain;
 }
 
 .annonse_bilde {
