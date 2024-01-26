@@ -360,9 +360,34 @@ body {
 
 #chatbot {
     position: fixed;
-    bottom: 0;
+    bottom: -2rem;
     right: 0;
     z-index: 100;
+    margin-bottom: -2.5rem;
+    opacity: 0%;
+}
+
+#chatbot-logo {
+    width: 5rem;
+    height: 5rem;
+    background-image: url('./Bilder/Chatbot\ Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 2rem;
+    right: -7rem;
+    z-index: 100;
+    opacity: 100%;
+}
+
+#chatbot-logo:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+#chatbot-logo:hover:after {
+    transform: scale(1);
+    transition: .3s;
 }
 /*couter huricane*/
 
