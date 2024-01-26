@@ -14,7 +14,7 @@
         <div id="navbar-logo"></div>
     </a>
     <ul class="navbar_lenker">
-        <li><a href="biler.html" id="navbar-biler" style="color: #EA3B30; text-decoration: underline; text-decoration-thickness: .3rem; text-underline-offset: .45rem;">Biler</a></li>
+        <li><a href="biler.html" id="navbar-biler">Biler</a></li>
         <li><a href="våre-talenter.html" id="navbar-om-oss">Om oss</a></li>
         <li><a href="siste-nyheter.html" id="navbar-events">Events</a></li>
         <li><a href="siste-nyheter.html" id="navbar-siste-nyheter">Siste nyheter</a></li>
@@ -23,31 +23,32 @@
 <img src="Bilder/Lamborghini_start-site.png" alt="Lamborgini bilde">
 
 <nav class="level">
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading">Drivkraft</p>
-      <p class="title js-count-up" data-value="3456"></p>
-    </div>
-  </div>
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading">0 - 100 km/t</p>
-      <p class="title js-count-up" data-value="123"></p>
-    </div>
-  </div>
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading">Pris</p>
-      <p class="title js-count-up" data-value="450000"></p>
-    </div>
-  </div>
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading">Maks hastighet</p>
-      <p class="title js-count-up" data-value="789"></p>
-    </div>
-  </div>
+	<div class="level-item has-text-centered">
+	  <div>
+		<p class="heading">Drivkraft (HP)</p>
+		<p class="title js-count-up" data-value="640"></p>
+	  </div>
+	</div>
+	<div class="level-item has-text-centered">
+	  <div>
+		<p class="heading">0 - 100 km/t (MS)</p>
+		<p class="title js-count-up" data-value="2500"></p>
+	  </div>
+	</div>
+	<div class="level-item has-text-centered">
+	  <div>
+		<p class="heading">Maks Hastighet (KM/T)</p>
+		<p class="title js-count-up" data-value="344"></p>
+	  </div>
+	</div>
+	<div class="level-item has-text-centered">
+	  <div>
+		<p class="heading">Pris (KR)</p>
+		<p class="title js-count-up" data-value="3699000"></p>
+	  </div>
+	</div>
 </nav>
+
 <div class="motor_lyd">
     <img class="kuttet_motor" src="/Bilnettside/DanielOgSimen/Bilder/Motor-kuttet.png" alt="motorbilde">
     <div class="tekst_knapp">
@@ -61,7 +62,43 @@
     </div>  
     
 </div>
+<p style="margin-bottom: 200vh;"> </p>
+<script>
+// JavaScript
+const counters = document.querySelectorAll('.js-count-up');
 
+const options = {
+  threshold: 1, // Percentage of the element visible in the viewport
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const targetValue = parseInt(entry.target.dataset.value);
+      let currentValue = 0;
+
+      const updateCounter = () => {
+        if (currentValue < targetValue) {
+          currentValue += Math.ceil(targetValue / 100);
+          entry.target.textContent = currentValue;
+          setTimeout(updateCounter, 10);
+        } else {
+          entry.target.textContent = targetValue;
+        }
+      };
+
+      updateCounter();
+      observer.unobserve(entry.target);
+    } else {
+      entry.target.textContent = '0'; // Reset the counter value when not visible
+    }
+  });
+}, options);
+
+counters.forEach(counter => {
+  observer.observe(counter);
+});
+</script>
 
 </body>
 </html>
