@@ -364,3 +364,66 @@ body {
     right: 0;
     z-index: 100;
 }
+/*couter huricane*/
+
+.level{
+background-color: #10213e;
+padding: 5rem 0;
+color: #ffffff;
+margin: 0!important;
+display: flex;
+justify-content: space-around;
+}
+
+.title{
+    color: inherit;
+    width: 200px;
+    height: 36px;
+}
+
+.motor_lyd {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.kuttet_motor {
+    width: 55%;
+}
+
+.motor_tekst {
+    color: black;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/*Play button*/
+
+.stroke-solid {
+  stroke-dashArray: 300;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 1s ease, opacity 1s ease;
+}
+
+.icon {
+  transform: scale(.8);
+  transform-origin: 50% 50%;
+  transition: transform 1s ease-out;
+}
+
+
+#play:hover {
+  .stroke-solid {
+    stroke-dashoffset: 300;
+  }
+  .icon {
+    transform: scale(1);
+  }
+}
+
+.tekst_knapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10rem; /*lage så begge er i midten hele tida*/
+}
