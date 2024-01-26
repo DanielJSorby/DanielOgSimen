@@ -184,7 +184,8 @@ body {
 #start-bilde {
     float: right;
     margin-right: -12rem;
-    width: 94.625rem;
+    width: 92rem;
+    margin-top: 20rem;
 }
 
 #start-header {
@@ -360,9 +361,34 @@ body {
 
 #chatbot {
     position: fixed;
-    bottom: 0;
+    bottom: -2rem;
     right: 0;
     z-index: 100;
+    margin-bottom: -2.5rem;
+    opacity: 0%;
+}
+
+#chatbot-logo {
+    width: 5rem;
+    height: 5rem;
+    background-image: url('./Bilder/Chatbot\ Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 2rem;
+    right: -7rem;
+    z-index: 100;
+    opacity: 100%;
+}
+
+#chatbot-logo:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+#chatbot-logo:hover:after {
+    transform: scale(1);
+    transition: .3s;
 }
 /*couter huricane*/
 
@@ -427,3 +453,30 @@ justify-content: space-around;
     align-items: center;
     margin-left: 10rem; /*lage så begge er i midten hele tida*/
 }
+
+/*Tall Hurricane */
+
+/*/ start count stats /*/
+
+.has-text-centered {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: #fff;
+
+}
+
+.js-count-up {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    
+}
+
+/*/ end count stats /*/
