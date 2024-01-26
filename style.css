@@ -214,14 +214,14 @@ body {
 }
 
 /* CSS bokser på biler siden */
-.bil_annonser {
+.biler {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.annonse {
+.salg_bil {
     background: black;
     margin: 1rem;
     border-radius: 15px;
@@ -230,7 +230,7 @@ body {
     object-fit: contain;
 }
 
-.annonse_bilde {
+.salg_bil_bilde {
     background-size: cover;
     border-radius: 15px;
     height: 26.375rem;
@@ -253,15 +253,15 @@ body {
     background-image: url('./Bilder/Ferrari_våre_merker.jpeg');
 }
 
-.annonse h2 {
+.salg_bil h2 {
     padding: 10px;
 }
 
-.annonse p {
+.salg_bil p {
     padding: 10px;
 }
 
-.annonse a {
+.salg_bil a {
     background-color: black;
     color: black;
     padding: 15px 20px;
@@ -271,7 +271,7 @@ body {
     text-decoration: none;
 }
 
-.annonse:hover {
+.salg_bil:hover {
     opacity: 75%;
     cursor: pointer;
     transform: scale(1.05);
