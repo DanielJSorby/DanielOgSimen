@@ -237,22 +237,23 @@ body {
     height: 26.375rem;
     opacity: 70%;
 
+
 }
 
 .car-1 {
-    background: #000 center/cover url("/Bilder/Tesla_Våre_merker.jpeg") no-repeat;
+    background: url(/Bilder/Tesla_Våre_merker.jpeg) repeat center; /* fallback */
 }
 
 .car-2 {
-    background: #000 center/cover url("/Bilder/Lamborghini_våre_merker.jpeg") no-repeat;
+    background-image: url('./Bilder/Lamborghini_våre_merker.jpeg');
 }
 
 .car-3 {
-    background: #000 center/cover url("/Bilder/Porsche_våre_merker.jpeg") no-repeat;
+    background-image: url('./Bilder/Porsche_våre_merker.jpeg');
 }
 
 .car-4 {
-    background: #000 center/cover url("/Bilder/Ferrari_våre_merker.jpeg") no-repeat;
+    background-image: url('./Bilder/Ferrari_våre_merker.jpeg');
 }
 
 .salg_bil h2 {
