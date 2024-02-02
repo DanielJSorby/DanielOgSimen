@@ -165,6 +165,10 @@ body {
     transition: .3s;
 }
 
+/* make an responsive hamburger navbar when looking at phone */
+
+
+
 
 /*  Forside Greie */
 
@@ -385,9 +389,11 @@ body {
     opacity: 0%;
     height: 32rem;
     width: 32rem;
+    cursor: pointer;
 }
 
 #chatbot-logo {
+    cursor: pointer;
     width: 5rem;
     height: 5rem;
     background-image: url('./Bilder/Chatbot\ Logo.png');
