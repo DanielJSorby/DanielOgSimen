@@ -359,7 +359,7 @@ body {
     transform: rotateZ(180deg);
 }
 
-
+/*  Chatbot  */
 #chatbot {
     position: fixed;
     bottom: -2rem;
