@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biler | Prime Wheels</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 <div class="navbar">
-    <a href="./index.html">
+    <a href="../">
         <div id="navbar-logo"></div>
     </a>
     <ul class="navbar_lenker">
-        <li><a href="biler.html" id="navbar-biler" style="color: #EA3B30; text-decoration: underline; text-decoration-thickness: .3rem; text-underline-offset: .45rem;">Biler</a></li>
+        <li><a href="../biler/" id="navbar-biler" style="color: #EA3B30; text-decoration: underline; text-decoration-thickness: .3rem; text-underline-offset: .45rem;">Biler</a></li>
         <li><a href="våre-talenter.html" id="navbar-om-oss">Om oss</a></li>
         <li><a href="siste-nyheter.html" id="navbar-events">Events</a></li>
         <li><a href="siste-nyheter.html" id="navbar-siste-nyheter">Siste nyheter</a></li>
@@ -24,13 +24,13 @@
     <h1>Våre biler</h1>
 </div>
 <video class="w-full" autoplay loop muted>
-    <source src="./Video/forside_biler_video.mp4" type="video/mp4">
+    <source src="../Video/forside_biler_video.mp4" type="video/mp4">
 </video>
 
 <h1 class="main-header" id="manuel">Let i vårt store utvalg av biler</h1>
 
 <section class="biler">
-    <a href="tesla_model s plaid.html">
+    <a href="./tesla/model_s_plaid/">
     <div class="salg_bil">
         <div class="salg_bil_bilde car-1">
         <h2 class="overskrift_biler_boks">Tesla Model S<br>Plaid</h2>
@@ -39,7 +39,7 @@
         </div>
     </div>
     </a>
-    <a href="lamborghini_huricane.html">
+    <a href="./lamborghini/huricane/">
     <div class="salg_bil">
         <div class="salg_bil_bilde car-2">
         <h2 class="overskrift_biler_boks">Lamborghini<br>Huricane</h2>
@@ -48,7 +48,7 @@
         </div>
     </div>
     </a>
-    <a href="porsche_911 gt3 rs.html">
+    <a href="./porche/911_gt3_rs/">
     <div class="salg_bil">
         <div class="salg_bil_bilde car-3">
         <h2 class="overskrift_biler_boks">Porsche 911<br>GT3 RS</h2>
@@ -57,7 +57,7 @@
         </div>
     </div>
     </a>
-    <a href="ferrari_f8 tributo.html">
+    <a href="./ferrari/f8_tributo/">
     <div class="salg_bil">
         <div class="salg_bil_bilde car-4">
         <h2 class="overskrift_biler_boks">Ferrari F8<br>Tributo</h2>
@@ -69,10 +69,11 @@
 </section>
 
 <!--Chatbot-->
-<iframe id="chatbot" src="https://interfaces.zapier.com/embed/page/clrapy5mi00041tf8hvo8n2ub?noBackground=true" style='max-width: 900px; width: 100%; height: 500px;'></iframe>
+<div id="chatbot-container"></div>
+<iframe id="chatbot" src="https://interfaces.zapier.com/embed/page/clrapy5mi00041tf8hvo8n2ub?noBackground=true" style='max-width: 900px;'></iframe>
 <button id="chatbot-logo"></button>
 
 
-<script src="./chatbot.js"></script>
+<script src="../index.js"></script>
 </body>
 </html>
