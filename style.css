@@ -364,9 +364,11 @@ body {
     position: fixed;
     bottom: -2rem;
     right: 0;
-    z-index: 100;
+    z-index: -1000;
     margin-bottom: -2.5rem;
     opacity: 0%;
+    height: 32rem;
+    width: 32rem;
 }
 
 #chatbot-logo {
