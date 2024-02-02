@@ -223,7 +223,6 @@ body {
 }
 
 .salg_bil {
-    background: black;
     margin: 1rem;
     border-radius: 15px;
     width: 43rem;
@@ -232,7 +231,6 @@ body {
 }
 
 .salg_bil_bilde {
-    background-size: cover;
     border-radius: 15px;
     height: 26.375rem;
     opacity: 70%;
@@ -274,10 +272,28 @@ body {
 }
 
 .salg_bil:hover {
-    opacity: 75%;
     cursor: pointer;
     transform: scale(1.05);
     transition: all 1s ease;
+}
+
+.mer_tekst {
+    background-color: white;
+    color: black;
+    height: 13.1875rem; 
+    padding: 3rem;
+    opacity: 0%;
+    border-radius: 0px 0px 15px 15px;
+    margin-top: -6.5rem;
+}
+
+.salg_bil:hover .mer_tekst{
+    color: black;
+    object-fit: contain;
+    display: block;
+    transition: 1s;
+    opacity: 100%;
+
 }
 
 .overskrift_biler_boks {
@@ -483,3 +499,5 @@ justify-content: space-around;
 }
 
 /*/ end count stats /*/
+
+/*Redigert lambo bilder og tekst*/ 
