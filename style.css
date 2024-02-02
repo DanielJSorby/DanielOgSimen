@@ -169,18 +169,18 @@ body {
 { box-sizing: border-box; }
 
 label .menu {
-  position: absolute;
-  right: -100px;
-  top: -100px;
-  z-index: 100;
-  width: 200px;
-  height: 200px;
-  background: #1c1c1c;
-  border-radius: 50% 50% 50% 50%;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 #1c1c1c, 0 0 0 0 #1c1c1c;
-  cursor: pointer;
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: #1c1c1c;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #1c1c1c, 0 0 0 0 #1c1c1c;
+    cursor: pointer;
   
 }
 
@@ -244,22 +244,23 @@ label input:checked + .menu .hamburger:before {
 label input:checked + .menu + ul { opacity: 1; }
 
 label ul {
-  z-index: 200;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: .25s 0s ease-in-out;
-  transition: .25s 0s ease-in-out;
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: .25s 0s ease-in-out;
+    transition: .25s 0s ease-in-out;
 }
 
 label a {
-  margin-bottom: 1em;
-  display: block;
-  color: #EA3B30;
-  text-decoration: none;
+    margin-bottom: 1em;
+    display: block;
+    text-decoration: none;
+    font-size: 1.875rem;
+    font-family: 'Arial Black';
   
 }
 
