@@ -4,8 +4,31 @@
     margin: 0;
     padding: 0;
     color: white;
-    font-family: futura-pt, sans-serif;
     min-width: 12%;
+}
+
+.store-overskrifter{
+    font-family: "arpona", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.vanelige-overskrifter {
+    font-family: "arpona", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.under-overskrifter {
+    font-family: "arpona", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.vanelig-tekst {
+    font-family: "arpona", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 body {
@@ -20,6 +43,53 @@ body {
     font-size: 3.125rem;
     text-align: center;
     padding-top: 3.125rem;
+}
+
+/*forside css*/
+.forside {
+    background-image: url("/Bilder/Forside\ bilde\ ny.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.forside-direction {
+    display: flex;
+    flex-direction: row;
+}
+
+.titel-undertekst-forside {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    margin-left: 5rem;
+}
+
+.titel-forside{
+    font-size: 70px;
+}
+
+.undertekst-forside {
+    font-size: 30px;
+}
+
+.forside-info{
+    height: 100vh;
+    width: 22.5625rem;
+    text-align: center;
+}
+
+.tilbud {
+    margin-top: 2.5rem;
+}
+
+.finn_bil {
+    display: flex;
+    justify-content: center;
+    margin-top: -13rem;
 }
 
 /*forside presentasjon til de ulike sidene css*/
@@ -67,14 +137,13 @@ body {
     text-decoration: underline;
     text-decoration-color: black;
     color: black;
-    font-size: 3.4375rem;
+    font-size: 35px;
 }
 
 .undertekst {
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
     color: black;
+    font-size: 15px;
 }
 
 .introduksjonsbilde {
@@ -99,7 +168,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.875rem;
+    font-size: 20px;
 }
 
 .logo {
@@ -138,7 +207,6 @@ body {
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
     display: inline-block;
     position: relative;
 }
@@ -293,7 +361,6 @@ body {
     display: block;
     transition: 1s;
     opacity: 100%;
-
 }
 
 .overskrift_biler_boks {
