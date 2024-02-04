@@ -12,18 +12,30 @@
     <a href="../">
         <div id="navbar-logo"></div>
     </a>
-    <ul class="navbar_lenker vanelige-overskrifter">
-        <li><a href="../biler/" id="navbar-biler" style="color: #EA3B30; text-decoration: underline; text-decoration-thickness: .3rem; text-underline-offset: .45rem;">Biler</a></li>
+    <ul class="navbar_lenker">
+        <li><a href="#" id="navbar-biler" style="color: #EA3B30; text-decoration: underline; text-decoration-thickness: .3rem; text-underline-offset: .45rem;">Biler</a></li>
         <li><a href="våre-talenter.html" id="navbar-om-oss">Om oss</a></li>
         <li><a href="siste-nyheter.html" id="navbar-events">Events</a></li>
         <li><a href="siste-nyheter.html" id="navbar-siste-nyheter">Siste nyheter</a></li>
     </ul>
 </div>
 
-<div class="våre_biler_tekst store-overskrifter">
+<label id="hamburger">
+    <input type="checkbox">
+    <span class="menu"> <span class="hamburger"></span> </span>
+    <ul class="navbar_lenker">
+        <li><a href="../index.html">Hjem</a></li>
+        <li><a href="./biler/" id="navbar-biler" style="color: #EA3B30; text-decoration: underline; text-decoration-thickness: .3rem; text-underline-offset: .45rem;">Biler</a></li>
+        <li><a href="våre-talenter.html" id="navbar-om-oss">Om oss</a></li>
+        <li><a href="siste-nyheter.html" id="navbar-events">Events</a></li>
+        <li><a href="siste-nyheter.html" id="navbar-siste-nyheter">Siste nyheter</a></li>
+    </ul>
+</label>
+
+<div class="våre_biler_tekst">
     <h1>Våre biler</h1>
 </div>
-<video class="w-full" autoplay loop muted>
+<video class="w-full" autoplay loop muted style="pointer-events: none;">
     <source src="../Video/forside_biler_video.mp4" type="video/mp4">
 </video>
 
