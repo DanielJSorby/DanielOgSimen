@@ -1,255 +1,348 @@
 @import url("https://use.typekit.net/gam8srr.css"); /*  futura-pt  */
 
 * {
-    margin: 0;
-    padding: 0;
-    color: white;
-    min-width: 12%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  min-width: 12%;
 }
 
-.store-overskrifter{
-    font-family: "arpona", serif;
-    font-weight: 700;
-    font-style: normal;
+.store-overskrifter {
+  font-family: "arpona", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .vanelige-overskrifter {
-    font-family: "arpona", serif;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "arpona", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .under-overskrifter {
-    font-family: "arpona", serif;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "arpona", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .vanelig-tekst {
-    font-family: "arpona", serif;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "arpona", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {
-    background-color:#1c1c1c;
-    width: 100vw;
-    
+  background-color: #1c1c1c;
+  width: 100vw;
 }
 
 /*  Tekst  */
 
 .main-header {
-    font-size: 3.125rem;
-    text-align: center;
-    padding-top: 3.125rem;
+  font-size: 3.125rem;
+  text-align: center;
+  padding-top: 3.125rem;
+}
+
+/* Loader */
+.data-loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.data-loader > div:last-child {
+  position: relative;
+  width: 80px;
+  height: 15px;
+  margin: 1em auto;
+}
+
+.data-loader > div:last-child > div {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #000;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.data-loader > div:last-child > div:nth-child(1) {
+  left: 8px;
+  animation: data-loader-1 0.6s infinite;
+  background-color: #ea3b30;
+}
+
+.data-loader > div:last-child > div:nth-child(2) {
+  left: 8px;
+  animation: data-loader-2 0.6s infinite;
+  background-color: #ea3b30;
+}
+
+.data-loader > div:last-child > div:nth-child(3) {
+  left: 32px;
+  animation: data-loader-2 0.6s infinite;
+  background-color: #ea3b30;
+}
+
+.data-loader > div:last-child > div:nth-child(4) {
+  left: 56px;
+  animation: data-loader-3 0.6s infinite;
+  background-color: #ea3b30;
+}
+
+@keyframes data-loader-1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes data-loader-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+@keyframes data-loader-3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 
 /*forside css*/
 .forside {
-    background-image: url("/Bilnettside/DanielOgSimen/Bilder/Forside\ bilde\ ny.png");
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+  background-image: url("/Bilnettside/DanielOgSimen/Bilder/Forside\ bilde\ ny.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 .forside-direction {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .titel-undertekst-forside {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    width: 100vw;
-    justify-content: center;
-    margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 100vw;
+  justify-content: center;
+  margin-left: 5rem;
 }
 
-.titel-forside{
-    font-size: 70px;
+.titel-forside {
+  font-size: 70px;
+  margin-top: 10rem;
 }
 
 .undertekst-forside {
-    font-size: 30px;
+  font-size: 30px;
 }
 
-.forside-info{
-    height: 100vh;
-    width: 22.5625rem;
-    text-align: center;
+.forside-info {
+  height: 100vh;
+  width: 22.5625rem;
+  text-align: center;
+  margin-top: 10rem;
 }
 
 .tilbud {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .finn_bil {
-    display: flex;
-    justify-content: center;
-    margin-top: -13rem;
+  display: flex;
+  justify-content: center;
+  margin-top: -13rem;
 }
 
 /*forside presentasjon til de ulike sidene css*/
-.bildeogtekst1, .bildeogtekst2, .bildeogtekst3 {
-    display: flex;
-    flex-direction: row;
+.bildeogtekst1,
+.bildeogtekst2,
+.bildeogtekst3 {
+  display: flex;
+  flex-direction: row;
 }
 
 .bildeogtekst1 {
-    background-color: white;
+  background-color: white;
 }
 
 .bildeogtekst2 {
-    background-color: #B3B3B3;
+  background-color: #b3b3b3;
 }
 
 .bilderogtekst {
-    color: black;
-    display: flex;
-    flex-direction: column;
+  color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 .omossbilde {
-    width: 51%;
+  width: 51%;
 }
 
-.knapp-forside a{
-    background-color: #EA3B30;
-    border-radius: 60px;
-    height: 2.8206rem;
-    width: 14.2744rem;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    margin-top: 0.5rem;
+.knapp-forside a {
+  background-color: #ea3b30;
+  border-radius: 60px;
+  height: 2.8206rem;
+  width: 14.2744rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
 }
 
 .knapp-forside a:hover {
-    transform: scale(1.2);
-    transition: 1s;
+  transform: scale(1.2);
+  transition: 1s;
 }
 .understrek {
-    text-decoration: underline;
-    text-decoration-color: black;
-    color: black;
-    font-size: 35px;
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: black;
+  font-size: 35px;
 }
 
 .undertekst {
-    font-size: 1.5rem;
-    color: black;
-    font-size: 15px;
+  font-size: 1.5rem;
+  color: black;
+  font-size: 15px;
 }
 
 .introduksjonsbilde {
-    margin: 4rem;
-    width: 75rem;
+  margin: 4rem;
+  width: 75rem;
 }
 
 .tekst {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
 }
 
 /* navbar CSS*/
 .navbar {
-    font-family: 'Arial Black';
-    height: 8.125rem;
-    width: 100%;
-    background-color: #1c1c1c;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
+  font-family: "Arial Black";
+  height: 8.125rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  position: fixed;
+  z-index: 10000;
+}
+
+.solid-nav {
+  background-color: #1c1c1c;
+  transition: background-color 0.2s linear;
+  -webkit-text-stroke: 0rem black;
+  box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.55);
 }
 
 .logo {
-    color: white;
-    display: flex;
-    height: 4rem;
-    margin-left: 1.5rem;
-    width: 12rem;
-    background-image: url('./Bilder/Prime\ Wheels\ Logo\ Rod.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  height: 4rem;
+  margin-left: 1.5rem;
+  width: 12rem;
+  background-image: url("./Bilder/Prime\ Wheels\ Logo\ Rod.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #navbar-logo {
-    background-image: url('./Bilder/Prime\ Wheels\ Logo\ Hvit.png');
-    display: flex;
-    height: 4.5rem;
-    width: 12rem;
-    margin-left: 1.5rem;
-    z-index: 10;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: url("./Bilder/Prime\ Wheels\ Logo\ Hvit.png");
+  display: flex;
+  height: 4.5rem;
+  width: 12rem;
+  margin-left: 1.5rem;
+  z-index: 10;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #navbar-logo:hover {
-    background-image: url('./Bilder/Prime\ Wheels\ Logo\ Rod.png');
-    transition: .3s;
+  background-image: url("./Bilder/Prime\ Wheels\ Logo\ Rod.png");
+  transition: 0.3s;
 }
 
 .navbar ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0.625rem 1.25rem;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
 }
 
 .navbar ul li a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
 }
 .navbar ul li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 0.3rem;
-    bottom: 0;
-    left: 0;
-    background-color: #EA3B30;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.3rem;
+  bottom: 0;
+  left: 0;
+  background-color: #ea3b30;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .navbar ul li a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .navbar ul li a:hover {
-    color: #EA3B30;
-    transition: .3s;
+  color: #ea3b30;
+  transition: 0.3s;
 }
 /* Hamburgernavbar CSS */
-*, *:before, *:after 
-{ box-sizing: border-box; }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 label .menu {
-    position: absolute;
-    right: -100px;
-    top: -100px;
-    z-index: 100;
-    width: 200px;
-    height: 200px;
-    background: #1c1c1c;
-    border-radius: 50% 50% 50% 50%;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 #1c1c1c, 0 0 0 0 #1c1c1c;
-    cursor: pointer;
-  
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #1c1c1c;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 0 0 #1c1c1c, 0 0 0 0 #1c1c1c;
+  cursor: pointer;
 }
 
 label .hamburger {
@@ -258,78 +351,82 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: #EA3B30;
+  background: #ea3b30;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-label .hamburger:after, label .hamburger:before {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+label .hamburger:after,
+label .hamburger:before {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   content: "";
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
-  background: #EA3B30;
+  background: #ea3b30;
 }
 
-label .hamburger:before { top: -10px; }
+label .hamburger:before {
+  top: -10px;
+}
 
-label .hamburger:after { bottom: -10px; }
+label .hamburger:after {
+  bottom: -10px;
+}
 
-label input { display: none; }
+label input {
+  display: none;
+}
 
 label input:checked + .menu {
   box-shadow: 0 0 0 100vw #1c1c1c, 0 0 0 100vh #1c1c1c;
   border-radius: 0;
-  
 }
 
 label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  
 }
 
 label input:checked + .menu .hamburger:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   bottom: 0;
-  
 }
 
 label input:checked + .menu .hamburger:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
-  
 }
 
-label input:checked + .menu + ul { opacity: 1; }
+label input:checked + .menu + ul {
+  opacity: 1;
+}
 
 label ul {
-    z-index: 200;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    -webkit-transition: .25s 0s ease-in-out;
-    transition: .25s 0s ease-in-out;
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
 }
 
 label a {
-    margin-bottom: 1em;
-    display: block;
-    text-decoration: none;
-    font-size: 1.875rem;
-    font-family: 'Arial Black';
-  
+  margin-bottom: 1em;
+  display: block;
+  text-decoration: none;
+  font-size: 1.875rem;
+  font-family: "Arial Black";
 }
 
 .hamburger {
@@ -343,317 +440,317 @@ label {
 }
 
 @media screen and (max-width: 800px) {
-    .navbar {
-      display: none;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-    label .menu {
-      display: block;
-    }
-    label {
-        display: block;
-    }
+  .navbar {
+    display: none;
   }
 
+  .hamburger {
+    display: block;
+  }
+  label .menu {
+    display: block;
+  }
+  label {
+    display: block;
+  }
+}
+
 /* make an responsive hamburger navbar when looking at phone */
-
-
-
 
 /*  Forside Greie */
 
 #forside-start {
-    text-align: center;
-    height: 59.375rem;
-    background-color: #10213e;
-    overflow: hidden;
+  text-align: center;
+  height: 59.375rem;
+  background-color: #10213e;
+  overflow: hidden;
 }
 
 #start-text-container {
-    padding: 0;
-    float: left;
-    margin: 6rem;
+  padding: 0;
+  float: left;
+  margin: 6rem;
 }
 
 #start-bilde {
-    float: right;
-    margin-right: -12rem;
-    width: 69.17142868%;
-    margin-top: 18rem;
+  float: right;
+  margin-right: -12rem;
+  width: 69.17142868%;
+  margin-top: 18rem;
 }
 
 #start-header {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 #start-under-header {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 #start-r {
-    vertical-align: text-top;
-    font-size: 2rem;
+  vertical-align: text-top;
+  font-size: 2rem;
 }
-/*våre biler CSS  */ 
-.våre_biler_tekst{
-    width: 100%;
-    margin-top: 0.5rem;
-    font-size: 4rem;
-    position: absolute;
-    display: flex;
-    justify-content: center;
+/*våre biler CSS  */
+.våre_biler_tekst {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 4rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
 
 #manuel {
-    padding-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 /* CSS bokser på biler siden */
 .biler {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .salg_bil {
-    margin: 1rem;
-    border-radius: 15px;
-    width: 43rem;
-    height: 26.375rem;  
-    object-fit: contain;
+  margin: 1rem;
+  border-radius: 15px;
+  width: 43rem;
+  height: 26.375rem;
+  object-fit: contain;
 }
 
 .salg_bil_bilde {
-    border-radius: 15px;
-    height: 26.375rem;
-    opacity: 70%;
-
+  border-radius: 15px;
+  height: 26.375rem;
+  opacity: 70%;
 }
 
 .car-1 {
-    background: #000 center/cover url("/Bilnettside/DanielOgSimen/Bilder/Tesla_Våre_merker.jpeg") no-repeat;
+  background: #000 center/cover
+    url("/Bilnettside/DanielOgSimen/Bilder/Tesla_Våre_merker.jpeg") no-repeat;
 }
 
 .car-2 {
-    background: #000 center/cover url("/Bilnettside/DanielOgSimen/Bilder/Lamborghini_våre_merker.jpeg") no-repeat;
+  background: #000 center/cover
+    url("/Bilnettside/DanielOgSimen/Bilder/Lamborghini_våre_merker.jpeg")
+    no-repeat;
 }
 
 .car-3 {
-    background: #000 center/cover url("/Bilnettside/DanielOgSimen/Bilder/Porsche_våre_merker.jpeg") no-repeat;
+  background: #000 center/cover
+    url("/Bilnettside/DanielOgSimen/Bilder/Porsche_våre_merker.jpeg") no-repeat;
 }
 
 .car-4 {
-    background: #000 center/cover url("/Bilnettside/DanielOgSimen/Bilder/Ferrari_våre_merker.jpeg") no-repeat;
+  background: #000 center/cover
+    url("/Bilnettside/DanielOgSimen/Bilder/Ferrari_våre_merker.jpeg") no-repeat;
 }
 
 .salg_bil h2 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .salg_bil p {
-    padding: 10px;
+  padding: 10px;
 }
 
 .salg_bil a {
-    background-color: black;
-    color: black;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 1vw 1vw;
-    text-decoration: none;
+  background-color: black;
+  color: black;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 1vw 1vw;
+  text-decoration: none;
 }
 
 .salg_bil:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: all 1s ease;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 1s ease;
 }
 
 .mer_tekst {
-    background-color: white;
-    color: black;
-    height: 13.1875rem; 
-    padding: 3rem;
-    opacity: 0%;
-    border-radius: 0px 0px 15px 15px;
-    margin-top: -6.5rem;
+  background-color: white;
+  color: black;
+  height: 13.1875rem;
+  padding: 3rem;
+  opacity: 0%;
+  border-radius: 0px 0px 15px 15px;
+  margin-top: -6.5rem;
 }
 
-.salg_bil:hover .mer_tekst{
-    color: black;
-    object-fit: contain;
-    display: block;
-    transition: 1s;
-    opacity: 100%;
+.salg_bil:hover .mer_tekst {
+  color: black;
+  object-fit: contain;
+  display: block;
+  transition: 1s;
+  opacity: 100%;
 }
 
 .overskrift_biler_boks {
-    font-size: 4.5rem;
+  font-size: 4.5rem;
 }
 
 .avsnitt_biler_boks {
-    font-size: 2.5rem;
-    margin-left: 1rem;
+  font-size: 2.5rem;
+  margin-left: 1rem;
 }
 
-/* SLIDESHOW CSS*/ 
+/* SLIDESHOW CSS*/
 .slider {
-    display: grid;
-    place-items: center;
-    height: 15.625rem;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+  display: grid;
+  place-items: center;
+  height: 15.625rem;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .slider-images {
-    display: flex;
-    width: calc(15.625rem * 18);
-    animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(15.625rem * 18);
+  animation: scroll 40s linear infinite;
 }
 
 .slider-images:hover {
-    transition: ease-in;
-    animation-play-state: paused;
+  transition: ease-in;
+  animation-play-state: paused;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-15.625rem * 9));
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-15.625rem * 9));
+  }
 }
 
 .slide {
-    height: 12.5rem;
-    width: 15.625rem;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    perspective: 6.25rem;
+  height: 12.5rem;
+  width: 15.625rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  perspective: 6.25rem;
 }
 
 .slide-image {
-    width: 100%;
+  width: 100%;
 }
 
 .slide-image:hover {
-    transform: translateZ(1.25rem);
-    transition: 1s;
-    transform: scale(1.1);
+  transform: translateZ(1.25rem);
+  transition: 1s;
+  transform: scale(1.1);
 }
 
 .slider::before,
 .slider::after {
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
 }
 
 .slider::before {
-    left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
 }
 
 .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 /*  Chatbot  */
 #chatbot {
-    position: fixed;
-    bottom: -2rem;
-    right: 0;
-    z-index: -1000;
-    margin-bottom: -2.5rem;
-    opacity: 0%;
-    height: 32rem;
-    width: 32rem;
-    cursor: pointer;
+  position: fixed;
+  bottom: -2rem;
+  right: 0;
+  z-index: -1000;
+  margin-bottom: -2.5rem;
+  opacity: 0%;
+  height: 32rem;
+  width: 32rem;
+  cursor: pointer;
 }
 
 #chatbot-logo {
-    cursor: pointer;
-    width: 5rem;
-    height: 5rem;
-    background-image: url('./Bilder/Chatbot\ Logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: fixed;
-    bottom: 2rem;
-    right: -4%;
-    z-index: 100;
-    opacity: 100%;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  background-image: url("./Bilder/Chatbot\ Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 2rem;
+  right: -4%;
+  z-index: 100;
+  opacity: 100%;
 }
 
 #chatbot-logo:hover {
-    transform: scale(1.1);
-    transition: .3s;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 #chatbot-logo:hover:after {
-    transform: scale(1);
-    transition: .3s;
+  transform: scale(1);
+  transition: 0.3s;
 }
 /*couter huricane*/
 
-.level{
-background-color: #10213e;
-padding: 5rem 0;
-color: #ffffff;
-margin: 0!important;
-display: flex;
-justify-content: space-around;
+.level {
+  background-color: #10213e;
+  padding: 5rem 0;
+  color: #ffffff;
+  margin: 0 !important;
+  display: flex;
+  justify-content: space-around;
 }
 
-.title{
-    color: inherit;
-    width: 200px;
-    height: 36px;
+.title {
+  color: inherit;
+  width: 200px;
+  height: 36px;
 }
 
 .motor_lyd {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
 }
 .kuttet_motor {
-    width: 55%;
+  width: 55%;
 }
 
 .motor_tekst {
-    color: black;
-    font-size: 2rem;
-    margin-top: 1rem;
-    text-align: center;
+  color: black;
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 /*Play button*/
 
 .stroke-solid {
-  stroke-dashArray: 300;
+  stroke-dasharray: 300;
   stroke-width: 4px;
   transition: stroke-dashoffset 1s ease, opacity 1s ease;
 }
 
 .icon {
-  transform: scale(.8);
+  transform: scale(0.8);
   transform-origin: 50% 50%;
   transition: transform 1s ease-out;
 }
-
 
 #play:hover {
   .stroke-solid {
@@ -665,10 +762,10 @@ justify-content: space-around;
 }
 
 .tekst_knapp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 10rem; /*lage så begge er i midten hele tida*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10rem; /*lage så begge er i midten hele tida*/
 }
 
 /*Tall Hurricane */
@@ -676,26 +773,24 @@ justify-content: space-around;
 /*/ start count stats /*/
 
 .has-text-centered {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .heading {
-    font-size: 1rem;
-    font-weight: 100;
-    color: #fff;
-
+  font-size: 1rem;
+  font-weight: 100;
+  color: #fff;
 }
 
 .js-count-up {
-    font-size: 2.1rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 1rem;
-    
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
 }
 
 /*/ end count stats /*/
 
-/*Redigert lambo bilder og tekst*/ 
+/*Redigert lambo bilder og tekst*/

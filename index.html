@@ -1,208 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hjem | Prime Wheels</title>
-    <link rel="icon" href="./Bilder/Prime Wheels Logo Hvit.png">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Bilder/Prime Wheels Logo Hvit.png" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/qfe7wdk.css">
-</head>
+    <link rel="stylesheet" href="https://use.typekit.net/qfe7wdk.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="data-loader">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <div class="navbar">
-        <a href="./">
-            <div class="logo"></div>
-        </a>
-        <ul class="navbar_lenker vanelige-overskrifter">
-            <li><a href="./biler/" id="navbar-biler">Biler</a></li>
-            <li><a href="våre-talenter.html" id="navbar-om-oss">Om oss</a></li>
-            <li><a href="siste-nyheter.html" id="navbar-events">Events</a></li>
-            <li><a href="siste-nyheter.html" id="navbar-siste-nyheter">Siste nyheter</a></li>
-        </ul>
+      <a href="./">
+        <div class="logo"></div>
+      </a>
+      <ul class="navbar_lenker vanelige-overskrifter">
+        <li><a href="./biler/" id="navbar-biler">Biler</a></li>
+        <li><a href="våre-talenter.html" id="navbar-om-oss">Om oss</a></li>
+        <li><a href="siste-nyheter.html" id="navbar-events">Events</a></li>
+        <li>
+          <a href="siste-nyheter.html" id="navbar-siste-nyheter"
+            >Siste nyheter</a
+          >
+        </li>
+      </ul>
     </div>
 
-<div class="forside">
-    <div class="forside-direction">
+    <div class="forside">
+      <div class="forside-direction">
         <div class="titel-undertekst-forside">
-            <h1 class="titel-forside store-overskrifter">Trenger du en luksus<br>bil til en god pris?</h1>
-            <h3 class="undertekst-forside vanelige-overskrifter">La oss finne den perfekte<br>for deg</h3>
+          <h1 class="titel-forside store-overskrifter">
+            Trenger du en luksus<br />bil til en god pris?
+          </h1>
+          <h3 class="undertekst-forside vanelige-overskrifter">
+            La oss finne den perfekte<br />for deg
+          </h3>
         </div>
         <div class="forside-info">
-            <h1 class="tilbud vanelige-overskrifter">Hva tilbyr vi?</h1>
-            <div class="tilbud under-overskrifter">
-                <h2>Biler</h2>
-                <h3>100+ biler</h3>
-            </div>
-            <div class="tilbud under-overskrifter">
-                <h2>Partnerskap</h2>
-                <h3>30+ selskaper</h3>
-            </div>
-            <div class="tilbud under-overskrifter">
-                <h2>Butikker</h2>
-                <h3>4 butikker i Norge</h3>
-            </div>
-            <div class="tilbud under-overskrifter">
-                <h2>Utvalg</h2>
-                <h3>10 luksøriøse merker</h3>
-            </div>
+          <h1 class="tilbud vanelige-overskrifter">Hva tilbyr vi?</h1>
+          <div class="tilbud under-overskrifter">
+            <h2>Biler</h2>
+            <h3>100+ biler</h3>
+          </div>
+          <div class="tilbud under-overskrifter">
+            <h2>Partnerskap</h2>
+            <h3>30+ selskaper</h3>
+          </div>
+          <div class="tilbud under-overskrifter">
+            <h2>Butikker</h2>
+            <h3>4 butikker i Norge</h3>
+          </div>
+          <div class="tilbud under-overskrifter">
+            <h2>Utvalg</h2>
+            <h3>10 luksøriøse merker</h3>
+          </div>
         </div>
+      </div>
+      <div class="knapp-forside finn_bil under-overskrifter">
+        <a href="./biler/index.html">Finn din bil</a>
+      </div>
     </div>
-    <div class="knapp-forside finn_bil under-overskrifter">
-        <a href="/Bilnettside/DanielOgSimen/biler/index.html">Finn din bil</a>
-    </div>
-</div>
     <label id="hamburger">
-        <input type="checkbox">
-        <span class="menu"> <span class="hamburger"></span> </span>
-        <ul class="navbar_lenker">
-            <li><a href="./" style="color: #EA3B30; text-decoration: underline; text-decoration-thickness: .3rem; text-underline-offset: .45rem;">Hjem</a></li>
-            <li><a href="./biler/" id="navbar-biler">Biler</a></li>
-            <li><a href="våre-talenter.html" id="navbar-om-oss">Om oss</a></li>
-            <li><a href="siste-nyheter.html" id="navbar-events">Events</a></li>
-            <li><a href="siste-nyheter.html" id="navbar-siste-nyheter">Siste nyheter</a></li>
-        </ul>
+      <input type="checkbox" />
+      <span class="menu"> <span class="hamburger"></span> </span>
+      <ul class="navbar_lenker">
+        <li>
+          <a
+            href="./"
+            style="
+              color: #ea3b30;
+              text-decoration: underline;
+              text-decoration-thickness: 0.3rem;
+              text-underline-offset: 0.45rem;
+            "
+            >Hjem</a
+          >
+        </li>
+        <li><a href="./biler/" id="navbar-biler">Biler</a></li>
+        <li><a href="våre-talenter.html" id="navbar-om-oss">Om oss</a></li>
+        <li><a href="siste-nyheter.html" id="navbar-events">Events</a></li>
+        <li>
+          <a href="siste-nyheter.html" id="navbar-siste-nyheter"
+            >Siste nyheter</a
+          >
+        </li>
+      </ul>
     </label>
 
-<div class="slider">
-    <div class="slider-images">
+    <div class="slider">
+      <div class="slider-images">
         <div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
         </div>
         <div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
-        </div><div class="slide">
-            <div>
-                <h2>Lamborghini</h2>
-                <img class="slide-image" src="./Bilder/Lamborghini_merker.png" alt="Lamborghini Logo">
-            </div>
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
         </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h2>Lamborghini</h2>
+            <img
+              class="slide-image"
+              src="./Bilder/Lamborghini_merker.png"
+              alt="Lamborghini Logo"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<!--driveouts og om oss introduksjon-->
-<div class="bilderogtekst">
-    <div class="bildeogtekst1">
+    <!--driveouts og om oss introduksjon-->
+    <div class="bilderogtekst">
+      <div class="bildeogtekst1">
         <div class="tekst">
-            <h1 class="understrek vanelige-overskrifter">Driveouts</h1>
-            <h3 class="undertekst vanelig-tekst">Gjennom året vil det bli arrangert flere driveouts. Disse turene skjer på 
-                ettermiddagen/kvelden i ukedagene.<br> Her er du er hjertelig velkommen til å 
-                ta med godbilen på en kjøretur<br> sammen med andre biler og entusiaster. 
-                Dato for disse vil bli publisert på sosiale media ca 1 uke i forkant. 
-                I utg pkt en i april, juni og aug/sept.</h3>
-            <div class="knapp-forside under-overskrifter">
-                <a href="index.html">Flere events</a>
-            </div>
+          <h1 class="understrek vanelige-overskrifter">Driveouts</h1>
+          <h3 class="undertekst vanelig-tekst">
+            Gjennom året vil det bli arrangert flere driveouts. Disse turene
+            skjer på ettermiddagen/kvelden i ukedagene.<br />
+            Her er du er hjertelig velkommen til å ta med godbilen på en
+            kjøretur<br />
+            sammen med andre biler og entusiaster. Dato for disse vil bli
+            publisert på sosiale media ca 1 uke i forkant. I utg pkt en i april,
+            juni og aug/sept.
+          </h3>
+          <div class="knapp-forside under-overskrifter">
+            <a href="index.html">Flere events</a>
+          </div>
         </div>
-        <img class="introduksjonsbilde" src="./Bilder/Driveouts.jpeg" alt="driveouts">
-    </div>
-    <div class="bildeogtekst2">
-        <img class="introduksjonsbilde" src="./Bilder/Om oss_forside.jpeg" alt="om oss_forsidebilde">
+        <img
+          class="introduksjonsbilde"
+          src="./Bilder/Driveouts.jpeg"
+          alt="driveouts"
+        />
+      </div>
+      <div class="bildeogtekst2">
+        <img
+          class="introduksjonsbilde"
+          src="./Bilder/Om oss_forside.jpeg"
+          alt="om oss_forsidebilde"
+        />
         <div class="tekst">
-            <h1 class="understrek vanelige-overskrifter">Om oss</h1>
-            <h3 class="undertekst vanelig-tekst">Gjennom året vil det bli arrangert flere driveouts. Disse turene skjer på 
-                ettermiddagen/kvelden i ukedagene.<br> Her er du er hjertelig velkommen til å 
-                ta med godbilen på en kjøretur<br> sammen med andre biler og entusiaster. 
-                Dato for disse vil bli publisert på sosiale media ca 1 uke i forkant. 
-                I utg pkt en i april, juni og aug/sept.</h3>
-            <div class="knapp-forside under-overskrifter">
-                <a href="index.html">Mer om oss</a>
-            </div>
+          <h1 class="understrek vanelige-overskrifter">Om oss</h1>
+          <h3 class="undertekst vanelig-tekst">
+            Gjennom året vil det bli arrangert flere driveouts. Disse turene
+            skjer på ettermiddagen/kvelden i ukedagene.<br />
+            Her er du er hjertelig velkommen til å ta med godbilen på en
+            kjøretur<br />
+            sammen med andre biler og entusiaster. Dato for disse vil bli
+            publisert på sosiale media ca 1 uke i forkant. I utg pkt en i april,
+            juni og aug/sept.
+          </h3>
+          <div class="knapp-forside under-overskrifter">
+            <a href="index.html">Mer om oss</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!--Chatbot-->
-<div id="chatbot-container"></div>
-<button id="chatbot-logo"></button>
-<iframe id="chatbot" src="https://interfaces.zapier.com/embed/page/clrapy5mi00041tf8hvo8n2ub?noBackground=true" style='max-width: 900px;'></iframe>
+    <!--Chatbot-->
+    <div id="chatbot-container"></div>
+    <button id="chatbot-logo"></button>
+    <iframe
+      id="chatbot"
+      src="https://interfaces.zapier.com/embed/page/clrapy5mi00041tf8hvo8n2ub?noBackground=true"
+      style="max-width: 900px"
+    ></iframe>
 
-
-
-<script src="./index.js"></script>
-
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
