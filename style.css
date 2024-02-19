@@ -126,7 +126,7 @@ body {
 
 /*forside css*/
 .forside {
-  background-image: url("/Bilnettside/DanielOgSimen/Bilder/Forside\ bilde\ ny.png");
+  background-image: url("./Bilder/Forside\ bilde\ ny.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -528,24 +528,22 @@ label {
 }
 
 .car-1 {
-  background: #000 center/cover
-    url("/Bilnettside/DanielOgSimen/Bilder/Tesla_Våre_merker.jpeg") no-repeat;
+  background: #000 center/cover url("./Bilder/Tesla_Våre_merker.jpeg") no-repeat;
 }
 
 .car-2 {
-  background: #000 center/cover
-    url("/Bilnettside/DanielOgSimen/Bilder/Lamborghini_våre_merker.jpeg")
+  background: #000 center/cover url("./Bilder/Lamborghini_våre_merker.jpeg")
     no-repeat;
 }
 
 .car-3 {
-  background: #000 center/cover
-    url("/Bilnettside/DanielOgSimen/Bilder/Porsche_våre_merker.jpeg") no-repeat;
+  background: #000 center/cover url("./Bilder/Porsche_våre_merker.jpeg")
+    no-repeat;
 }
 
 .car-4 {
-  background: #000 center/cover
-    url("/Bilnettside/DanielOgSimen/Bilder/Ferrari_våre_merker.jpeg") no-repeat;
+  background: #000 center/cover url("./Bilder/Ferrari_våre_merker.jpeg")
+    no-repeat;
 }
 
 .salg_bil h2 {
