@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="navbar">
-        <a href="../../../">
+        <a href="../index.html">
           <div id="navbar-logo"></div>
         </a>
         <ul class="navbar_lenker vanelige-overskrifter">
@@ -47,7 +47,40 @@
           </li>
         </ul>
       </label>
+
+<div class="om-oss-forside">
+    <video class="spline-video" autoplay loop muted style="pointer-events: none">
+        <source src="../Video/spline animation.mp4" type="video/mp4" />
+    </video>
+    <div class="align-omoss">
+        <div class="bilde-tekst-omoss store-overskrifter">
+            <h1 class="farge-tekst-omoss">Hvem er Daniel<br> og Simen?</h1>
+            <h1 class="farge-tekst-omoss underskrift-omoss">Velkommen til om Daniel og Simen,<br>
+                Her vil du finne informasjon om<br>
+                Hvem vi er og litt om noen<br>
+                Av våre prosjekter  
+                </h1>
+        </div>
+        <div class="align-bilde">
+            <img class="bilde-omoss" src="../Bilder/OmOss bilde.png" alt="forside-omossbilde">
+        </div>
+    </div>
+    <div class="knapper-omoss">
+        <a href="#" class="omoss-forside-knapp">Programmering</a>
+        <a href="#" class="omoss-forside-knapp">Våre prosjekter</a>
+        <a href="#" class="omoss-forside-knapp">Design</a>
+    </div>
+</div>
+
+
+
     <script src="../index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Loading screen
+      $(window).on("load", function () {
+        $(".data-loader").fadeOut("fast");
+      });
+    </script>
 </body>
 </html>

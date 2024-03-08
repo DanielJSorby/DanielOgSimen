@@ -797,3 +797,65 @@ label {
 /*/ end count stats /*/
 
 /*Redigert lambo bilder og tekst*/
+
+
+/* 
+CCS om oss siden */
+
+.spline-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  object-fit: fill;
+}
+
+.align-omoss {
+  display: flex;
+
+}
+
+.bilde-tekst-omoss {
+  z-index: 100;
+  margin: 10rem;
+  font-size: 3.4rem;
+  width: 70%;
+}
+
+.farge-tekst-omoss {
+  color: #AAAAAA;
+}
+
+.underskrift-omoss {
+  font-size: 1.4rem;
+}
+
+.bilde-omoss {
+  z-index: 100;
+  width: 100%;
+}
+
+.align-bilde {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin-top: 10rem;
+  margin-right: 5rem;
+}
+
+.omoss-forside-knapp {
+  z-index: 100;
+  background-color: blue;
+  width: 1rem;
+  height: 2rem;
+  align-items: center;
+}
+
+.knapper-omoss {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+}
+
