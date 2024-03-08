@@ -44,6 +44,11 @@ body {
   padding-top: 3.125rem;
 }
 
+.top-overskrift {
+  padding-top: 1rem;
+  font-size: larger;
+}
+
 /* Loader */
 .data-loader {
   position: fixed;
