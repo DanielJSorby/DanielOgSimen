@@ -7,6 +7,24 @@
   min-width: 12%;
 }
 
+body {
+  background-color: #1c1c1c;
+  width: 100vw;
+}
+
+.flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/*  Tekst  */
+
+.main-header {
+  font-size: 3.125rem;
+  text-align: center;
+  padding-top: 3.125rem;
+}
+
 .store-overskrifter {
   font-family: "arpona", serif;
   font-weight: 700;
@@ -31,102 +49,36 @@
   font-style: normal;
 }
 
-body {
-  background-color: #1c1c1c;
-  width: 100vw;
-}
-
-/*  Tekst  */
-
-.main-header {
-  font-size: 3.125rem;
-  text-align: center;
-  padding-top: 3.125rem;
-}
-
-.top-overskrift {
-  padding-top: 1rem;
-  font-size: larger;
-}
-
 /* Loader */
-.data-loader {
-  position: fixed;
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  text-align: center;
+}
+
+.loading {
   background-color: #1c1c1c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100000;
+  width: 100vw;
+  height: 100vh;
 }
 
-.data-loader > div:last-child {
-  position: relative;
-  width: 80px;
-  height: 15px;
-  margin: 1em auto;
+.farget {
+  color: #ea3b30; /* Sett fargen på de fargede bokstavene */
 }
 
-.data-loader > div:last-child > div {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #000;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-
-.data-loader > div:last-child > div:nth-child(1) {
-  left: 8px;
-  animation: data-loader-1 0.6s infinite;
-  background-color: #ea3b30;
-}
-
-.data-loader > div:last-child > div:nth-child(2) {
-  left: 8px;
-  animation: data-loader-2 0.6s infinite;
-  background-color: #ea3b30;
-}
-
-.data-loader > div:last-child > div:nth-child(3) {
-  left: 32px;
-  animation: data-loader-2 0.6s infinite;
-  background-color: #ea3b30;
-}
-
-.data-loader > div:last-child > div:nth-child(4) {
-  left: 56px;
-  animation: data-loader-3 0.6s infinite;
-  background-color: #ea3b30;
-}
-
-@keyframes data-loader-1 {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes data-loader-2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(24px, 0);
-  }
-}
-
-@keyframes data-loader-3 {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
+.gjennomsiktig {
+  color: transparent; /* Gjør de gjennomsiktige bokstavene usynlige */
 }
 
 /*forside css*/
@@ -512,16 +464,15 @@ label {
 
 /* CSS bokser på biler siden */
 .biler {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(270px, 1fr);
+  margin: 1.5rem 5rem;
 }
 
 .salg_bil {
   margin: 1rem;
   border-radius: 15px;
-  width: 43rem;
+  width: 30rem;
   height: 26.375rem;
   object-fit: contain;
 }

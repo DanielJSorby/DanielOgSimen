@@ -1,0 +1,23 @@
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.farget {
+  color: #ea3b30; /* Sett fargen på de fargede bokstavene */
+}
+
+.gjennomsiktig {
+  color: transparent; /* Gjør de gjennomsiktige bokstavene usynlige */
+}
