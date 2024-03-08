@@ -44,6 +44,11 @@ body {
   padding-top: 3.125rem;
 }
 
+.top-overskrift {
+  padding-top: 1rem;
+  font-size: larger;
+}
+
 /* Loader */
 .data-loader {
   position: fixed;
@@ -54,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 100000;
 }
 
 .data-loader > div:last-child {
