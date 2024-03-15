@@ -803,7 +803,7 @@ label {
 CCS om oss siden */
 
 .spline-video {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%; 
@@ -846,16 +846,45 @@ CCS om oss siden */
 
 .omoss-forside-knapp {
   z-index: 100;
-  background-color: blue;
-  width: 1rem;
-  height: 2rem;
-  align-items: center;
+  background-color: #121B60;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 2rem;
 }
 
 .knapper-omoss {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  gap: 3rem;
+}
 
+.omoss-forside-knapp:hover {
+  background-color: #2A0033;
+}
+
+.våre-prosjekter {
+  color: white;
+}
+
+.topp {
+  display: flex;
+
+}
+
+/* css bilder lambo */
+
+.lambo-bilder {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.lambo-høyre {
+  object-fit: contain;
+  width: 100%;
+}
+
+.innhold-lambo-bilder {
+  margin: 3rem;
 }
 
