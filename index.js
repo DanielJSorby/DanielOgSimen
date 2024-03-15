@@ -3,10 +3,16 @@ console.log("index.js is loaded");
 
 
 
+var snd = new Audio("../../../Lyd/lamborghini_Huracan.mp3");
+
 window.addEventListener("click", function (e) {
   if (document.getElementById("play").contains(e.target)) {
-    var snd = new Audio("./Lyd/lamborghini_Huracan.mp3");
-    snd.play();
+    if (snd.paused) {
+      snd.play();
+    } else {
+      snd.pause();
+      snd.currentTime = 0; // Optional: Reset the audio to the start
+    }
   }
 });
 

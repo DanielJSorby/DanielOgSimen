@@ -200,7 +200,6 @@ body {
 
 /* navbar CSS*/
 .navbar {
-  font-family: "Arial Black";
   height: 8.125rem;
   width: 100%;
   display: flex;
@@ -749,7 +748,6 @@ label {
 
 /*Redigert lambo bilder og tekst*/
 
-
 /* 
 CCS om oss siden */
 
@@ -757,14 +755,13 @@ CCS om oss siden */
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
   object-fit: fill;
 }
 
 .align-omoss {
   display: flex;
-
 }
 
 .bilde-tekst-omoss {
@@ -775,7 +772,7 @@ CCS om oss siden */
 }
 
 .farge-tekst-omoss {
-  color: #AAAAAA;
+  color: #aaaaaa;
 }
 
 .underskrift-omoss {
@@ -807,6 +804,4 @@ CCS om oss siden */
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-
 }
-
