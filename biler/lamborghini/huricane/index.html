@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="../../../style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/Bilnettside/DanielOgSimen/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="data-loader">
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="loading">
+      <div class="loading-container">
+        <h1 class="loader store-overskrifter" id="loader"></h1>
       </div>
     </div>
     <div class="navbar">
@@ -120,21 +118,38 @@
       </div>
     </div>
 
-<div class="lambo-bilder">
-  <img src="/Bilnettside/DanielOgSimen/Bilder/Lambo-høyre-side.png" alt="lamo-bilder" class="lambo-høyre">
-  <div class="innhold-lambo-bilder">
-    <h1>Design</h1>
-    <p class="design-tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore qui cupiditate, earum nulla quae ex perspiciatis soluta minus molestiae deleniti labore magni esse facilis libero eos optio nihil doloremque.</p>
-  </div>
-  </div>
-  <div class="lambo-bilder">
-    <img src="/Bilnettside/DanielOgSimen/Bilder/Lambo-høyre-side.png" alt="lamo-bilder" class="lambo-høyre">
-    <div class="innhold-lambo-bilder">
-      <h1>Design</h1>
-      <p class="design-tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore qui cupiditate, earum nulla quae ex perspiciatis soluta minus molestiae deleniti labore magni esse facilis libero eos optio nihil doloremque.</p>
+    <div class="lambo-bilder">
+      <img
+        src="/Bilnettside/DanielOgSimen/Bilder/Lambo-høyre-side.png"
+        alt="lamo-bilder"
+        class="lambo-høyre"
+      />
+      <div class="innhold-lambo-bilder">
+        <h1>Design</h1>
+        <p class="design-tekst">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore
+          qui cupiditate, earum nulla quae ex perspiciatis soluta minus
+          molestiae deleniti labore magni esse facilis libero eos optio nihil
+          doloremque.
+        </p>
+      </div>
     </div>
+    <div class="lambo-bilder">
+      <img
+        src="/Bilnettside/DanielOgSimen/Bilder/Lambo-høyre-side.png"
+        alt="lamo-bilder"
+        class="lambo-høyre"
+      />
+      <div class="innhold-lambo-bilder">
+        <h1>Design</h1>
+        <p class="design-tekst">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore
+          qui cupiditate, earum nulla quae ex perspiciatis soluta minus
+          molestiae deleniti labore magni esse facilis libero eos optio nihil
+          doloremque.
+        </p>
+      </div>
     </div>
-
 
     <script>
       // JavaScript
@@ -171,13 +186,10 @@
       counters.forEach((counter) => {
         observer.observe(counter);
       });
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../../index.js"></script>
-    <script>
+
       // Loading screen
       $(window).on("load", function () {
-        $(".data-loader").fadeOut("fast");
+        $(".loading").fadeOut("fast");
       });
 
       // Navbar blir solid når du skroller forbi starten av siden
@@ -197,5 +209,6 @@
         });
       });
     </script>
+    <script src="../../../index.js"></script>
   </body>
 </html>
