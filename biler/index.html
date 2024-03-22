@@ -9,12 +9,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/qfe7wdk.css" />
   </head>
   <body>
-    <div class="data-loader">
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="loading">
+      <div class="loading-container">
+        <h1 class="loader store-overskrifter" id="loader"></h1>
       </div>
     </div>
     <div class="navbar">
@@ -226,8 +223,13 @@
       style="max-width: 900px"
     ></iframe>
     <button id="chatbot-logo"></button>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+      // Loading screen
+      $(window).on("load", function () {
+        $(".data-loader").fadeOut("fast");
+      });
+
       // Navbar blir solid når du skroller forbi starten av siden
       $(document).ready(function () {
         $(window).scroll(function () {
@@ -246,7 +248,6 @@
       });
     </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../index.js"></script>
   </body>
 </html>

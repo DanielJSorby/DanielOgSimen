@@ -463,8 +463,12 @@ label {
 
 /* CSS bokser på biler siden */
 .biler {
-  display: grid;
-  grid-template-columns: minmax(270px, 1fr);
+  /* display: grid;
+  grid-template-columns: minmax(270px, 1fr); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 1.5rem 5rem;
 }
 
@@ -794,7 +798,7 @@ CCS om oss siden */
 
 .omoss-forside-knapp {
   z-index: 100;
-  background-color: #121B60;
+  background-color: #121b60;
   padding: 15px;
   text-align: center;
   border-radius: 10px;
@@ -808,7 +812,7 @@ CCS om oss siden */
 }
 
 .omoss-forside-knapp:hover {
-  background-color: #2A0033;
+  background-color: #2a0033;
 }
 
 .våre-prosjekter {
@@ -817,7 +821,6 @@ CCS om oss siden */
 
 .topp {
   display: flex;
-
 }
 
 /* css bilder lambo */
@@ -835,4 +838,3 @@ CCS om oss siden */
 .innhold-lambo-bilder {
   margin: 3rem;
 }
-
