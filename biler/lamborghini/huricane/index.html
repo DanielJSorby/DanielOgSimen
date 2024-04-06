@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="../../../style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/Bilnettside/DanielOgSimen/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   </head>
   <body class="body-huracane">
     <div class="data-loader">
@@ -15,6 +21,10 @@
         <div></div>
         <div></div>
         <div></div>
+  <body>
+    <div class="loading">
+      <div class="loading-container">
+        <h1 class="loader store-overskrifter" id="loader"></h1>
       </div>
     </div>
     <div class="navbar">
@@ -167,6 +177,82 @@
 <video controls class="end-huracane-video">
   <source src="/Video/End - huracane video.mp4" type="video/mp4" />
 </video>
+    <div class="lambo-bilder">
+      <img
+        src="/Bilnettside/DanielOgSimen/Bilder/Lambo-høyre-side.png"
+        alt="lamo-bilder"
+        class="lambo-høyre"
+      />
+      <div class="innhold-lambo-bilder">
+        <h1>Design</h1>
+        <p class="design-tekst">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore
+          qui cupiditate, earum nulla quae ex perspiciatis soluta minus
+          molestiae deleniti labore magni esse facilis libero eos optio nihil
+          doloremque.
+        </p>
+      </div>
+    </div>
+    <div class="lambo-bilder">
+      <img
+        src="/Bilnettside/DanielOgSimen/Bilder/Lambo-høyre-side.png"
+        alt="lamo-bilder"
+        class="lambo-høyre"
+      />
+      <div class="innhold-lambo-bilder">
+        <h1>Design</h1>
+        <p class="design-tekst">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore
+          qui cupiditate, earum nulla quae ex perspiciatis soluta minus
+          molestiae deleniti labore magni esse facilis libero eos optio nihil
+          doloremque.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>brands</h4>
+            <ul>
+              <li><a href="../.././tesla/">Tesla</a></li>
+              <li><a href="../.././lamborghini/">Lamborghini</a></li>
+              <li><a href="../.././porche/">Porche</a></li>
+              <li><a href="../.././ferrari/">Ferarri</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script>
       // JavaScript
@@ -203,13 +289,10 @@
       counters.forEach((counter) => {
         observer.observe(counter);
       });
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../../index.js"></script>
-    <script>
+
       // Loading screen
       $(window).on("load", function () {
-        $(".data-loader").fadeOut("fast");
+        $(".loading").fadeOut("fast");
       });
 
       // Navbar blir solid når du skroller forbi starten av siden
@@ -229,5 +312,6 @@
         });
       });
     </script>
+    <script src="../../../index.js"></script>
   </body>
 </html>

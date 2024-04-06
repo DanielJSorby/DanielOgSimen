@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="../style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://use.typekit.net/qfe7wdk.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="data-loader">
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="loading">
+      <div class="loading-container">
+        <h1 class="loader store-overskrifter" id="loader"></h1>
       </div>
     </div>
     <div class="navbar">
@@ -123,23 +125,9 @@
             <p class="avsnitt_biler_boks under-overskrifter">
               -Explore the limits-
             </p>
-            <span
-              class="mer_tekst vanelig-tekst"
-              style="
-                font-size: 20px;
-                font-family: arpona, serif;
-                font-weight: 500;
-                font-style: normal;
-              "
-              >Mer info om Lamborghini Huricane:<br /><span
-                style="
-                  font-size: 15px;
-                  color: black;
-                  font-family: arpona, serif;
-                  font-weight: 300;
-                  font-style: normal;
-                "
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            <span class="mer_tekst vanelig-tekst"
+              >Mer info om Lamborghini Huricane:<br /><span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                 fugit exercitationem, error alias ipsum sed impedit perspiciatis
                 ratione. Natus, temporibus fugiat assumenda quod neque sit
                 veniam numquam nam dolorem eius?</span
@@ -157,22 +145,8 @@
             <p class="avsnitt_biler_boks under-overskrifter">
               -How to beat the traffic home-
             </p>
-            <span
-              class="mer_tekst vanelig-tekst"
-              style="
-                font-size: 20px;
-                font-family: arpona, serif;
-                font-weight: 500;
-                font-style: normal;
-              "
+            <span class="mer_tekst vanelig-tekst"
               >Mer info om Porsche 911 GT3 RS:<br /><span
-                style="
-                  font-size: 15px;
-                  color: black;
-                  font-family: arpona, serif;
-                  font-weight: 300;
-                  font-style: normal;
-                "
                 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                 fugit exercitationem, error alias ipsum sed impedit perspiciatis
                 ratione. Natus, temporibus fugiat assumenda quod neque sit
@@ -191,22 +165,8 @@
             <p class="avsnitt_biler_boks under-overskrifter">
               -Cant get a bad photo-
             </p>
-            <span
-              class="mer_tekst vanelig-tekst"
-              style="
-                font-size: 20px;
-                font-family: arpona, serif;
-                font-weight: 500;
-                font-style: normal;
-              "
+            <span class="mer_tekst vanelig-tekst"
               >Mer info om Ferrari F8 Tributo:<br /><span
-                style="
-                  font-size: 15px;
-                  color: black;
-                  font-family: arpona, serif;
-                  font-weight: 300;
-                  font-style: normal;
-                "
                 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                 fugit exercitationem, error alias ipsum sed impedit perspiciatis
                 ratione. Natus, temporibus fugiat assumenda quod neque sit
@@ -218,6 +178,50 @@
       </a>
     </section>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>brands</h4>
+            <ul>
+              <li><a href="./tesla/">Tesla</a></li>
+              <li><a href="./lamborghini/">Lamborghini</a></li>
+              <li><a href="./porche/">Porche</a></li>
+              <li><a href="./ferrari/">Ferarri</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!--Chatbot-->
     <div id="chatbot-container"></div>
     <iframe
@@ -226,8 +230,13 @@
       style="max-width: 900px"
     ></iframe>
     <button id="chatbot-logo"></button>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+      // Loading screen
+      $(window).on("load", function () {
+        $(".data-loader").fadeOut("fast");
+      });
+
       // Navbar blir solid når du skroller forbi starten av siden
       $(document).ready(function () {
         $(window).scroll(function () {
@@ -246,7 +255,6 @@
       });
     </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../index.js"></script>
   </body>
 </html>
