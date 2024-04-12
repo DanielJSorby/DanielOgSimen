@@ -189,7 +189,7 @@ body {
 
 .understrek2 {
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: whitez ;
   color: white;
   font-size: 35px;
 }
@@ -832,8 +832,10 @@ CCS om oss siden */
   height: 5rem;
 }
 
+
 .body-huracane {
   background-color: white;
+}
 /* footer */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
