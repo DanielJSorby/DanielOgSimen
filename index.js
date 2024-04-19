@@ -131,3 +131,29 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+/* Slideshow */
+
+let slideIndex = 0;
+const slides = document.querySelector(".slides");
+const slideWidth = 500; // Set this to the width of your images
+
+function updateSlidePosition() {
+  slides.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+}
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.children.length;
+  updateSlidePosition();
+}
+
+function prevSlide() {
+  slideIndex =
+    (slideIndex - 1 + slides.children.length) % slides.children.length;
+  updateSlidePosition();
+}
+
+document.getElementById("next").addEventListener("click", nextSlide);
+document.getElementById("prev").addEventListener("click", prevSlide);
+
+setInterval(nextSlide, 5000); // Change slide every 5 seconds

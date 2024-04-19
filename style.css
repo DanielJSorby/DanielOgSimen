@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   color: white;
-  min-width: 12%;
 }
 
 body {
@@ -139,12 +138,11 @@ body {
 }
 
 .bildeogtekst1 {
-  background-color: #F7F5EF;
+  background-color: #f7f5ef;
 }
 
 .bildeogtekst2 {
   background-color: #222222;
-
 }
 
 .bilderogtekst {
@@ -189,7 +187,7 @@ body {
 
 .understrek2 {
   text-decoration: underline;
-  text-decoration-color: whitez ;
+  text-decoration-color: whitez;
   color: white;
   font-size: 35px;
 }
@@ -199,7 +197,6 @@ body {
   color: white;
   font-size: 15px;
 }
-
 
 .introduksjonsbilde {
   margin: 4rem;
@@ -573,47 +570,79 @@ label {
 
 /* SLIDESHOW CSS*/
 
+.slider-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .slider {
-  width: 50rem;
-  height: 31.25rem;
+  width: 500px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
   border-radius: 10px;
+}
+
+.slider .slides-container {
+  width: 500px; /* Set this to the width of your images */
   overflow: hidden;
 }
 
-.slides {
-  width: 500%;
-  height: 31.25rem;
+.slider .slides {
   display: flex;
+  transition: transform 0.6s ease-in-out;
 }
 
-.slides input {
-  display: none;
+.slider .slides img {
+  width: 100%;
+  height: auto;
 }
 
-.slide {
-  width: 20%;
-  transition: 2s;
-}
-
-.slide img {
-  width: 50rem;
-  height: 31.25rem;
-}
-
-.navigation-manual {
+.slider .controls {
   position: absolute;
-  width: 50rem;
+  top: 50%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+  justify-content: space-between;
 }
 
-.manual-btn {
-  border: 2px solid #ea3b30;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
+.slider .controls button {
+  background: none;
+  border: none;
   cursor: pointer;
-  transition: 1s;
+  background-color: #10213e;
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+  margin: 0 1rem;
+}
+
+.controls button::after {
+  /*content: ">";*/
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.controls button:hover {
+  border-color: #ea3b30;
+  transition: 0.3s;
+}
+
+.controls button:hover::after {
+  color: #ea3b30;
+}
+
+.controls button#next::after {
+  content: ">";
+}
+
+.controls button#prev::after {
+  content: "<";
 }
 
 /*  Chatbot  */
@@ -815,7 +844,6 @@ CCS om oss siden */
 
 /* css bilder lambo */
 
-
 .lambo-bilder {
   width: 65rem;
 }
@@ -825,13 +853,11 @@ CCS om oss siden */
   display: flex;
   margin: 0 auto;
   justify-content: center;
-
 }
 
 .space {
   height: 5rem;
 }
-
 
 .body-huracane {
   background-color: white;
