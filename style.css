@@ -104,6 +104,10 @@ body {
   margin-left: 5rem;
 }
 
+.farge-forside-intro {
+  color: black;
+}
+
 .titel-forside {
   font-size: 70px;
   margin-top: 10rem;
@@ -157,6 +161,22 @@ body {
   width: 51%;
 }
 
+.stars {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  width: 12rem;
+  
+  
+}
+
+.star {
+  color: yellow;
+  opacity: 90%;
+  
+}
+
 .knapp-forside a {
   background-color: #ea3b30;
   border-radius: 60px;
@@ -168,11 +188,15 @@ body {
   justify-content: center;
   font-weight: bold;
   margin-top: 0.5rem;
+  background: linear-gradient(to right, #ea3b30 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
 }
 
 .knapp-forside a:hover {
-  transform: scale(1.2);
-  transition: 1s;
+  transform: scale(1.06);
+  background-position: left bottom;
 }
 .understrek1 {
   text-decoration: underline;
@@ -185,8 +209,7 @@ body {
   font-size: 1.5rem;
   display: flex;
   color: black;
-  font-size: 15px;
-  margin-left: 2rem;
+  font-size: 16px;
 }
 
 .understrek2 {
@@ -199,7 +222,7 @@ body {
 .undertekst2 {
   font-size: 1.5rem;
   color: white;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 
@@ -212,7 +235,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem;
+  margin: 3rem;
 }
 
 /* navbar CSS*/
@@ -671,18 +694,26 @@ label {
   height: 36px;
 }
 
+.tekst_knapp {
+  display: flex;
+  justify-content: center;
+}
+
 .motor_lyd {
   display: flex;
-  flex-direction: row;
-  background-color: white;
 }
+
+.engine_sound {
+  margin-top: 2.5rem;
+}
+
 .kuttet_motor {
   width: 55%;
 }
 
 .motor_tekst {
   color: black;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 1rem;
   text-align: center;
 }
@@ -836,9 +867,6 @@ CCS om oss siden */
 
 .body-huracane {
   background-color: white;
-
-.body-huracane {
-  background-color: white;
 }
 /* footer */
 
@@ -925,11 +953,7 @@ body {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .container {
   max-width: 1170px;
   margin: auto;
@@ -1024,4 +1048,5 @@ ul {
     width: 100%;
   }
 }
-}
+
+/* play/pause button:  */
