@@ -165,14 +165,11 @@ body {
   flex-direction: row;
   gap: 0.75rem;
   width: 12rem;
-  
-  
 }
 
 .star {
   color: yellow;
   opacity: 90%;
-  
 }
 
 .knapp-forside a {
@@ -189,7 +186,7 @@ body {
   background: linear-gradient(to right, #ea3b30 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .knapp-forside a:hover {
@@ -694,7 +691,7 @@ label {
   background-repeat: no-repeat;
   position: fixed;
   bottom: 2rem;
-  right: -4%;
+  right: 1%;
   z-index: 100;
   opacity: 100%;
 }
@@ -895,7 +892,6 @@ CCS om oss siden */
   height: 5rem;
 }
 
-
 .body-huracane {
   background-color: white;
 }
@@ -1014,3 +1010,6 @@ ul {
     width: 100%;
   }
 }
+
+
+/* play/pause button:  */
