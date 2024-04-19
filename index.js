@@ -137,6 +137,7 @@ window.onscroll = function () {
 let slideIndex = 0;
 const slides = document.querySelector(".slides");
 const slideWidth = 500; // Set this to the width of your images
+let slideInterval;
 
 function updateSlidePosition() {
   slides.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
@@ -145,17 +146,22 @@ function updateSlidePosition() {
 function nextSlide() {
   slideIndex = (slideIndex + 1) % slides.children.length;
   updateSlidePosition();
+  resetInterval();
 }
 
 function prevSlide() {
   slideIndex =
     (slideIndex - 1 + slides.children.length) % slides.children.length;
   updateSlidePosition();
+  resetInterval();
+}
+
+function resetInterval() {
+  clearInterval(slideInterval);
+  slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
 }
 
 document.getElementById("next").addEventListener("click", nextSlide);
 document.getElementById("prev").addEventListener("click", prevSlide);
 
-setInterval(nextSlide, 5000); // Change slide every 5 seconds
-
-
+resetInterval(); // Start the interval when the page loads
