@@ -226,7 +226,8 @@ body {
 
 .introduksjonsbilde {
   margin: 4rem;
-  width: 75rem;
+  width: 52%;
+  object-fit: contain;
 }
 
 .tekst {
@@ -739,6 +740,7 @@ label {
 
 .kuttet_motor {
   width: 55%;
+  object-fit: contain;
 }
 
 .motor_tekst {
@@ -893,17 +895,9 @@ CCS om oss siden */
   height: 5rem;
 }
 
-<<<<<<< HEAD
-=======
-.body-huracane {
-  background-color: white;
-<<<<<<< HEAD
 
->>>>>>> 36af408c6f38e5852218bb90e9458d0c62bfbf6d
 .body-huracane {
   background-color: white;
-=======
->>>>>>> 03b58f2d529d6c632e2091f2cbb81d3336aa4e1a
 }
 /* footer */
 
@@ -1085,12 +1079,8 @@ ul {
     width: 100%;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-}
->>>>>>> 36af408c6f38e5852218bb90e9458d0c62bfbf6d
-=======
+
+
 
 /* play/pause button:  */
->>>>>>> 03b58f2d529d6c632e2091f2cbb81d3336aa4e1a
+
