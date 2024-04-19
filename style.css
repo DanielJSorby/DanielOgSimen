@@ -181,13 +181,19 @@ body {
 
 .undertekst1 {
   font-size: 1.5rem;
+  display: flex;
   color: black;
   font-size: 15px;
+  margin-left: 2rem;
 }
 
 .understrek2 {
   text-decoration: underline;
+<<<<<<< HEAD
   text-decoration-color: whitez;
+=======
+  text-decoration-color: white;
+>>>>>>> 36af408c6f38e5852218bb90e9458d0c62bfbf6d
   color: white;
   font-size: 35px;
 }
@@ -859,6 +865,12 @@ CCS om oss siden */
   height: 5rem;
 }
 
+<<<<<<< HEAD
+=======
+.body-huracane {
+  background-color: white;
+
+>>>>>>> 36af408c6f38e5852218bb90e9458d0c62bfbf6d
 .body-huracane {
   background-color: white;
 }
@@ -1046,3 +1058,7 @@ ul {
     width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 36af408c6f38e5852218bb90e9458d0c62bfbf6d
