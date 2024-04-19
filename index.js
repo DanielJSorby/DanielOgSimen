@@ -157,3 +157,5 @@ document.getElementById("next").addEventListener("click", nextSlide);
 document.getElementById("prev").addEventListener("click", prevSlide);
 
 setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
+
