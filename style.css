@@ -599,10 +599,11 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .slider {
-  width: 500px;
+  width: 100%;
   height: auto;
   overflow: hidden;
   position: relative;
@@ -610,7 +611,7 @@ label {
 }
 
 .slider .slides-container {
-  width: 500px; /* Set this to the width of your images */
+  width: 100%; /* Set this to the width of your images */
   overflow: hidden;
 }
 
@@ -972,15 +973,22 @@ ul {
 }
 
 .social-links a:nth-child(1):hover {
-  background-color: #316FF6; /* Facebook blue color */
+  background-color: #316ff6; /* Facebook blue color */
 }
 
 .social-links a:nth-child(2):hover {
-  background-color: #008AD8; /* Twitter blue color */
+  background-color: #008ad8; /* Twitter blue color */
 }
 
 .social-links a:nth-child(3):hover {
-  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); /* Instagram gradient color */
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  ); /* Instagram gradient color */
 }
 
 .social-links a:nth-child(4):hover {
@@ -1010,6 +1018,5 @@ ul {
     width: 100%;
   }
 }
-
 
 /* play/pause button:  */
