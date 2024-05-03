@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   color: white;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -809,10 +808,16 @@ label {
 CCS om oss siden */
 
 .spline-video {
-  height: 100vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
   object-fit: fill;
+}
+
+.align-omoss {
+  display: flex;
 }
 
 .bilde-tekst-omoss {
@@ -820,8 +825,6 @@ CCS om oss siden */
   margin: 10rem;
   font-size: 3.4rem;
   width: 70%;
-  position: absolute;
-  top: 20%;
 }
 
 .farge-tekst-omoss {
@@ -952,7 +955,6 @@ ul {
   color: #ffffff;
   padding-left: 8px;
 }
-
 .footer-col .social-links a {
   display: inline-block;
   height: 40px;
@@ -965,7 +967,6 @@ ul {
   color: #ffffff;
   transition: all 0.5s ease;
 }
-
 .footer-col .social-links a:hover {
   color: #24262b;
 }
@@ -1010,93 +1011,5 @@ ul {
   }
 }
 
-/* Om oss ny */
-.background-omoss {
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-}
 
-.omoss-overskrift {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  font-size: 45px;
-}
-
-.omoss-undertekst {
-  position: absolute;
-  top: 37%;
-  left: 10%;
-  font-size: 20px;
-}
-
-.omoss-knapp {
-  z-index: 100;
-  background-color: #121b60;
-  padding: 15px;
-  text-align: center;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-.omoss-knapper {
-  display: flex;
-  gap: 3rem;
-  position: absolute;
-  top: 80%;
-  left: calc(50% - 474.22px/2);
-}
-
-.omoss-knapp:hover {
-  background-color: #2a0033;
-}
-
-.programmering-side {
-  display: flex;
-  flex-direction: row;
-  margin: 2rem;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.programmering-tekst {
-  width: 50%;
-}
-
-.body-omoss {
-  background-color: #000000;
-}
-
-/* om oss_våre prosjekter  */
-
-.våre-prosjekter {
-  background-color: #240027;
-  padding: 40px;
-}
-
-.prosjekter-tekst {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.prosjekter-images {
-  display: flex;
-  justify-content: center;
-  gap: 6rem;
-  align-items: center;
-  margin-top: 3rem;
-}
-
-.img-prosjekter {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 30px;
-  object-fit: cover;
-}
-.img-prosjekter:hover {
-  border: 2px solid #121B60; /* 2px wide solid red border */
-}
+/* play/pause button:  */
