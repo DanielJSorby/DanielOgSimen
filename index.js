@@ -136,11 +136,11 @@ window.onscroll = function () {
 
 let slideIndex = 0;
 const slides = document.querySelector(".slides");
-const slideWidth = 500; // Set this to the width of your images
+const slideWidth = 100; // Set this to the width of your images
 let slideInterval;
 
 function updateSlidePosition() {
-  slides.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+  slides.style.transform = `translateX(-${slideWidth * slideIndex}%)`;
 }
 
 function nextSlide() {
