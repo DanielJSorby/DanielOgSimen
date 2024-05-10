@@ -253,7 +253,7 @@ body {
 
 /* navbar CSS*/
 .navbar {
-  height: 8.125rem;
+  height: 6.125rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -1069,7 +1069,7 @@ ul {
   gap: 3rem;
   position: absolute;
   top: 80%;
-  left: calc(50% - 474.22px/2);
+  left: calc(50% - 474.22px / 2);
 }
 
 .omoss-knapp:hover {
@@ -1122,6 +1122,6 @@ ul {
   object-fit: cover;
 }
 .img-prosjekter:hover {
-  border: 2px solid #121B60; /* 2px wide solid red border */
+  border: 2px solid #121b60; /* 2px wide solid red border */
 }
 /* play/pause button:  */
