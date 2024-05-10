@@ -1,5 +1,9 @@
 {
   "devDependencies": {
-    "@types/jquery": "^3.5.29"
+    "@types/jquery": "^3.5.29",
+    "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "three": "^0.164.1"
   }
 }
