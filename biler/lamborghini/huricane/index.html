@@ -60,7 +60,7 @@
       </ul>
     </label>
 
-    <img
+    <img class="lambo-bilde-start"
       src="../../../Bilder/Lamborghini_start-site.png"
       alt="Lamborgini bilde"
     />
@@ -123,18 +123,33 @@
       </h3>
 
     </div>
-    <img
-      class="lambo-bilder"
-      src="/Bilder/Lambo-høyre-side.png"
-      alt="driveouts"
-    />
-  </div>
+    <div class="card">
+      <img class="lambo-bilder" data-picture src="" alt="Movie Picture">
+    </div>
+    </div>
   <div class="bildeogtekst2">
-    <img
-      class="lambo-bilder"
-      src="/Bilder/Lambo bilde venstre.png"
-      alt="om oss_forsidebilde"
-    />
+    <div class="card2">
+      <img class="lambo-bilder" data-picture2 src="" alt="Movie Picture">
+    </div>
+    <script>
+      function setPictureSource() {
+          let bildeSti;
+          if (window.matchMedia("(max-width: 1150px)").matches) {
+              bildeSti = "/Bilder/bilde2-lambo-høyre.png";
+              bildeSti2 = "/Bilder/bilde2-lambo-venstre.png";
+          } else {
+              bildeSti = "/Bilder/Lambo-høyre-side.png";
+              bildeSti2 = "/Bilder/Lambo bilde venstre.png";
+          }
+          let bildeElement = document.querySelector(".card img[data-picture]");
+          bildeElement.src = bildeSti;
+          let bildeElement2 = document.querySelector(".card2 img[data-picture2]");
+          bildeElement2.src = bildeSti2;
+      }
+  
+      window.onload = setPictureSource;
+      window.onresize = setPictureSource;
+  </script>
     <div class="tekst">
       <h1 class="understrek2 vanelige-overskrifter">Interior</h1>
       <h3 class="undertekst2 vanelig-tekst">
@@ -259,6 +274,7 @@
           }
         });
       });
+      
     </script>
     <script src="../../../index.js"></script>
   </body>

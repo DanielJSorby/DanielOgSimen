@@ -140,6 +140,29 @@ body {
 .bildeogtekst3 {
   display: flex;
   flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.lambo-bilder {
+  width: 40vw;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1150px) {
+  .bildeogtekst1,
+  .bildeogtekst2,
+  .bildeogtekst3 {
+    flex-direction: column;
+    align-items: center;
+  } 
+  .lambo-bilder {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    width: 60vw;
+    height: 25vh;
+  }
+  
 }
 
 .bildeogtekst1 {
@@ -875,9 +898,11 @@ CCS om oss siden */
 
 /* css bilder lambo */
 
-.lambo-bilder {
-  width: 65rem;
+.lambo-bilde-start {
+  width: 100vw;
 }
+
+
 
 .end-huracane-video {
   width: 80vw;
