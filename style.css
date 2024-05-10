@@ -383,7 +383,7 @@ body {
 }
 
 label .menu {
-  position: absolute;
+  position: fixed;
   right: -100px;
   top: -100px;
   z-index: 100;
@@ -395,6 +395,7 @@ label .menu {
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 0 0 #1c1c1c, 0 0 0 0 #1c1c1c;
   cursor: pointer;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 label .hamburger {
@@ -463,7 +464,7 @@ label input:checked + .menu + ul {
 
 label ul {
   z-index: 200;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -478,7 +479,8 @@ label a {
   display: block;
   text-decoration: none;
   font-size: 1.875rem;
-  font-family: "Arial Black";
+  font-weight: 300;
+  color: #ea3b30;
 }
 
 .hamburger {
