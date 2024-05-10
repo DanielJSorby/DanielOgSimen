@@ -155,6 +155,22 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 1000px) {
+  .bildeogtekst1,
+  .bildeogtekst2,
+  .bildeogtekst3 {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .introduksjonsbilde {
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .omossbilde {
   width: 51%;
 }
