@@ -20,7 +20,7 @@ body {
 /*  Tekst  */
 
 .main-header {
-  font-size: 3vw; /* Adjust as needed */
+  font-size: 3.125rem;
   text-align: center;
   padding-top: 3.125rem;
 }
@@ -29,51 +29,24 @@ body {
   font-family: "arpona", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 5vw; /* Adjust as needed */
 }
 
 .vanelige-overskrifter {
   font-family: "arpona", serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 2vw; /* Adjust as needed */
 }
 
 .under-overskrifter {
   font-family: "arpona", serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5vw; /* Adjust as needed */
 }
 
 .vanelig-tekst {
   font-family: "arpona", serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1vw; /* Adjust as needed */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 800px) {
-  .main-header {
-    font-size: 5vw; /* Adjust as needed */
-  }
-
-  .store-overskrifter {
-    font-size: 2rem; /* Adjust as needed */
-  }
-
-  .vanelige-overskrifter {
-    font-size: 4vw; /* Adjust as needed */
-  }
-
-  .under-overskrifter {
-    font-size: 3vw; /* Adjust as needed */
-  }
-
-  .vanelig-tekst {
-    font-size: 2vw; /* Adjust as needed */
-  }
 }
 
 /* Loader */
@@ -131,19 +104,17 @@ body {
   margin-left: 5rem;
 }
 
-@media screen and (max-width: 1000px) {
-  .titel-undertekst-forside {
-    margin-top: 5rem;
-  }
-}
-
 .farge-forside-intro {
   color: black;
 }
 
 .titel-forside {
-  /* font-size: 70px; */
+  font-size: 70px;
   margin-top: 10rem;
+}
+
+.undertekst-forside {
+  font-size: 30px;
 }
 
 .forside-info {
@@ -151,21 +122,6 @@ body {
   width: 22.5625rem;
   text-align: center;
   margin-top: 10rem;
-}
-
-@media screen and (max-width: 1000px) {
-  .forside-info .tilbud {
-    color: transparent;
-    font-size: 0px;
-  }
-  .forside-info h2 {
-    color: transparent;
-    font-size: 0px;
-  }
-  .forside-info h3 {
-    color: transparent;
-    font-size: 0px;
-  }
 }
 
 .tilbud {
@@ -221,23 +177,6 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
-}
-
-@media (max-width: 1000px) {
-  .bildeogtekst1,
-  .bildeogtekst2,
-  .bildeogtekst3 {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-  }
-
-  .introduksjonsbilde {
-    height: auto;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-  }
 }
 
 .omossbilde {
@@ -321,7 +260,7 @@ body {
 
 /* navbar CSS*/
 .navbar {
-  height: 6.125rem;
+  height: 8.125rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -408,7 +347,7 @@ body {
 }
 
 label .menu {
-  position: fixed;
+  position: absolute;
   right: -100px;
   top: -100px;
   z-index: 100;
@@ -420,7 +359,6 @@ label .menu {
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 0 0 #1c1c1c, 0 0 0 0 #1c1c1c;
   cursor: pointer;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 label .hamburger {
@@ -489,7 +427,7 @@ label input:checked + .menu + ul {
 
 label ul {
   z-index: 200;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -504,8 +442,7 @@ label a {
   display: block;
   text-decoration: none;
   font-size: 1.875rem;
-  font-weight: 300;
-  color: #ea3b30;
+  font-family: "Arial Black";
 }
 
 .hamburger {
@@ -686,7 +623,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .slider {
@@ -813,6 +750,22 @@ label {
 .tekst_knapp {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motor_tekst {
+  color: black;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .motor_tekst {
+    font-size: 2rem;
+  }
+  
 }
 
 .motor_lyd {
@@ -828,12 +781,7 @@ label {
   object-fit: contain;
 }
 
-.motor_tekst {
-  color: black;
-  font-size: 2.5rem;
-  margin-top: 1rem;
-  text-align: center;
-}
+
 
 /*Play button*/
 
@@ -858,12 +806,6 @@ label {
   }
 }
 
-.tekst_knapp {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 10rem; /*lage så begge er i midten hele tida*/
-}
 
 /*Tall Hurricane */
 
@@ -1141,7 +1083,7 @@ ul {
   gap: 3rem;
   position: absolute;
   top: 80%;
-  left: calc(50% - 474.22px / 2);
+  left: calc(50% - 474.22px/2);
 }
 
 .omoss-knapp:hover {
@@ -1194,6 +1136,6 @@ ul {
   object-fit: cover;
 }
 .img-prosjekter:hover {
-  border: 2px solid #121b60; /* 2px wide solid red border */
+  border: 2px solid #121B60; /* 2px wide solid red border */
 }
 /* play/pause button:  */
