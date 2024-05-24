@@ -10,6 +10,7 @@
 body {
   background-color: #1c1c1c;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .flip {
@@ -149,20 +150,22 @@ body {
   object-fit: cover;
 }
 
+@media screen and (max-width: 810px) {
+}
+
 @media screen and (max-width: 1150px) {
   .bildeogtekst1,
   .bildeogtekst2,
   .bildeogtekst3 {
     flex-direction: column;
     align-items: center;
-  } 
+  }
   .lambo-bilder {
     margin-bottom: 4rem;
     margin-top: 4rem;
     width: 60vw;
     height: 25vh;
   }
-  
 }
 
 .bildeogtekst1 {
@@ -739,6 +742,7 @@ label {
   margin: 0 !important;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -754,22 +758,28 @@ label {
   align-items: center;
 }
 
-.motor_tekst {
+.motor_tekst.under-overskrifter {
   color: black;
   font-size: 2.5rem;
   margin-top: 1rem;
   text-align: center;
 }
 
+@media screen and (max-width: 810px) {
+  .motor_tekst.under-overskrifter {
+    font-size: 3vw;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .motor_tekst {
     font-size: 2rem;
   }
-  
 }
 
 .motor_lyd {
   display: flex;
+  width: 100vw;
 }
 
 .engine_sound {
@@ -780,8 +790,6 @@ label {
   width: 55%;
   object-fit: contain;
 }
-
-
 
 /*Play button*/
 
@@ -805,7 +813,6 @@ label {
     transform: scale(1);
   }
 }
-
 
 /*Tall Hurricane */
 
@@ -906,8 +913,6 @@ CCS om oss siden */
 .lambo-bilde-start {
   width: 100vw;
 }
-
-
 
 .end-huracane-video {
   width: 80vw;
@@ -1083,7 +1088,7 @@ ul {
   gap: 3rem;
   position: absolute;
   top: 80%;
-  left: calc(50% - 474.22px/2);
+  left: calc(50% - 474.22px / 2);
 }
 
 .omoss-knapp:hover {
@@ -1136,6 +1141,6 @@ ul {
   object-fit: cover;
 }
 .img-prosjekter:hover {
-  border: 2px solid #121B60; /* 2px wide solid red border */
+  border: 2px solid #121b60; /* 2px wide solid red border */
 }
 /* play/pause button:  */
